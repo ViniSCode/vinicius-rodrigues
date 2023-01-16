@@ -1,6 +1,6 @@
 export default function Home () {
   return (
-    <div className="container max-w-[342px] mx-auto snap-start snap-mandatory scroll-smooth">
+    <div className="container max-w-[358px] mx-auto snap-start snap-mandatory scroll-smooth px-4">
       <header className="pt-[44px]">
         <nav className="flex items-center justify-between">
           <span className="font-montserrat font-bold text-sm leading-[17px] tracking-[-0.02em] text-blue-gradient">VINÍCIUS RODRIGUES</span>
