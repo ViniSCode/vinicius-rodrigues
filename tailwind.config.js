@@ -1,0 +1,63 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      transitionProperty: {
+        'filter': 'filter',
+      },
+      fontFamily: {
+        roboto: ['Roboto, sans-serif'],
+        sans: ['Open Sans, sans-serif'],
+        montserrat: ['Montserrat, sans-serif'],
+      },
+      colors: {
+        green: {
+          300: '#00B37E',
+          500: '#3DDC97',
+          700: '#015F43',
+        },
+        blue: {
+          500: '#4AA6F7',
+          900: '#141A31'
+        },
+        orange: {
+          500: '#FF5C00',
+          600: '#B15A35',
+        },
+        red: {
+          600: '#CF5964',
+          300: '#FA5A69',
+          500: '#CF3D4B',
+        },
+        gray: {
+          100: '#FCFCFC',
+          200: '#AEAEAE',
+          250: '#C6C6C6',
+          300: '#646466',
+          350: '#7A7C7E',
+          500: '#6B6D6E',
+          600: '#3F3F3F',
+          700: '#1C1C1D',
+          800: '#161819',
+          900: '#01080B'
+        },
+        black: {
+          500: '#FFFFFF',
+        },
+        pink: {
+          500: '#FF495C',
+        },
+        yellow: {
+          500: '#FEA600',
+        }
+      },
+    }
+  },
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
+}

@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply scrollbar-thumb-gray-500 scrollbar-thin scrollbar-none bg-gradient-to-r from-blue-900 to-gray-900;
+  -webkit-font-smoothing: antialiased
+}
+
+@layer base {
+  html {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  #root, body, html {
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  .bg-blue-gradient {
+    background: linear-gradient(90deg, #1141BD 0%, #4AA6F7 65.47%);
+  }
+  .text-blue-gradient {
+    background: linear-gradient(90deg, #1141BD 0%, #4AA6F7 65.47%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-image {
+    filter: drop-shadow(0px 39.4178px 78.8356px rgba(74, 166, 247, 0.3));
+  }
+
+  .button-properties {
+    border: 1px solid #4AA6F7;
+    box-shadow: 0px 0px 19px 7px rgba(74, 166, 247, 0.1);
+    border-radius: 6px;
+  }
+
+}
