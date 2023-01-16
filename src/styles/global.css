@@ -22,6 +22,10 @@ body {
   .bg-blue-gradient {
     background: linear-gradient(90deg, #1141BD 0%, #4AA6F7 65.47%);
   }
+  
+  .menu-bg-blue-gradient {
+    background: linear-gradient(90deg, #141A31 0%, #01080B 65.47%);
+  }
   .text-blue-gradient {
     background: linear-gradient(90deg, #1141BD 0%, #4AA6F7 65.47%);
     -webkit-background-clip: text;
@@ -38,4 +42,7 @@ body {
     border-radius: 6px;
   }
 
+  .header {
+    background: #0000004d;
+  }
 }

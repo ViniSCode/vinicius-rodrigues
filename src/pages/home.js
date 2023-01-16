@@ -1,13 +1,16 @@
 export default function Home () {
   return (
-    <div className="container max-w-[358px] mx-auto snap-start snap-mandatory scroll-smooth px-4">
-      <header className="pt-[44px]">
-        <nav className="flex items-center justify-between">
-          <span className="font-montserrat font-bold text-sm leading-[17px] tracking-[-0.02em] text-blue-gradient">VINÍCIUS RODRIGUES</span>
-          <img src="/assets/menu.svg" alt="" />
-        </nav>
-      </header>
-      <main className="mt-[232px] pb-56">
+    <div className="container snap-start snap-mandatory scroll-smooth">
+      <div className="menu-bg-blue-gradient fixed top-0 left-0 right-0 shadow-sm">
+        <header className="pt-[22px] pb-[22px] w-full max-w-[358px] px-4 mx-auto">
+          <nav className="flex items-center justify-between">
+            <span className="font-montserrat font-bold text-sm leading-[17px] tracking-[-0.02em] text-blue-gradient">VINÍCIUS RODRIGUES</span>
+            <img src="/assets/menu.svg" alt="" />
+          </nav>
+        </header>
+      </div>
+
+      <main className="mt-[232px] pb-56 max-w-[358px] px-4 mx-auto">
         <section className="text-white">
           <p className="text-blue-gradient font-montserrat font-bold leading-5 tracking-[-0.02em]">Hi, my name is</p>
           <h1 className="mt-4 font-sans font-extrabold text-[34px] leading-[46px]">Vinicius Rodrigues</h1>
