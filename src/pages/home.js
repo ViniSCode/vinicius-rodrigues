@@ -1,6 +1,6 @@
 export default function Home () {
   return (
-    <div className="container snap-start snap-mandatory scroll-smooth">
+    <div className="container snap-start snap-mandatory scroll-smooth mx-auto">
       <div className="menu-bg-blue-gradient fixed top-0 left-0 right-0 shadow-sm z-[20]">
         <header className="pt-[22px] pb-[22px] w-full max-w-[358px] px-4 mx-auto">
           <nav className="flex items-center justify-between">
@@ -65,7 +65,7 @@ export default function Home () {
 
         <section className="mt-[398px]">
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient">03. TECHNOLOGIES</h2>
-          <div className="mt-[92px]">
+          <div className="mt-[92px] flex flex-col items-center">
 
             <div className="max-w-[214px]">
               <div className="flex items-center justify-center">
