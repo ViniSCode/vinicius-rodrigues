@@ -1,4 +1,77 @@
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect, useMemo } from 'react';
+import { useInView } from 'react-intersection-observer';
+
 export default function Home () {
+  const vhPx = useMemo(() => `-${window.innerHeight}px 0px 0px 0px`, [window.innerHeight]);
+  const {ref: section1Ref, inView: section1View } = useInView({
+    // rootMargin: vhPx,
+    triggerOnce: true
+  });
+
+  const {ref: section2Ref, inView: section2View } = useInView({
+    rootMargin: vhPx,
+    triggerOnce: true
+  });
+
+  const {ref: section3Ref, inView: section3View } = useInView({
+    rootMargin: vhPx,
+    triggerOnce: true
+  });
+
+  const {ref: section4Ref, inView: section4View } = useInView({
+    rootMargin: vhPx,
+    triggerOnce: true
+  });
+
+  const {ref: section5Ref, inView: section5View } = useInView({
+    // rootMargin: vhPx,
+    triggerOnce: true
+  });
+
+  const opacitySection1 = useAnimation();
+  const opacitySection2 = useAnimation();
+  const opacitySection3 = useAnimation();
+  const opacitySection4 = useAnimation();
+  const opacitySection5 = useAnimation();
+  const inViewFadeIn = { transition: { duration: 0.5, ease: 'easeInOut', delay: 0.2, delayChildren: 0.5}, opacity: 1}
+  const inViewFadeOut = { transition: { duration: 0.5, ease: 'easeInOut'}, opacity: 0 }
+
+  useEffect(() => {
+    if (section1View) {
+      opacitySection1.start(inViewFadeIn);
+    } 
+    if (!section1View) {
+      opacitySection1.start(inViewFadeOut);
+    }
+    if (section2View) {
+      opacitySection2.start(inViewFadeIn);
+    } 
+    if (!section2View) {
+      opacitySection2.start(inViewFadeOut);
+    }
+    if (section3View) {
+      opacitySection3.start(inViewFadeIn);
+    } 
+    if (!section3View) {
+      opacitySection3.start(inViewFadeOut);
+    }
+    if (section4View) {
+      opacitySection4.start(inViewFadeIn);
+    } 
+    if (!section4View) {
+      opacitySection4.start(inViewFadeOut);
+    }
+    if (section5View) {
+      console.log('foi')
+      opacitySection5.start(inViewFadeIn);
+    } 
+    if (!section5View) {
+      console.log('não foi')
+      opacitySection5.start(inViewFadeOut);
+    }
+  }, [section1View, section2View, section3View, section4View, section5View]);
+  
   return (
     <div className="container snap-start snap-mandatory scroll-smooth mx-auto">
       <div className="menu-bg-blue-gradient fixed top-0 left-0 right-0 shadow-sm z-[20]">
@@ -10,8 +83,8 @@ export default function Home () {
         </header>
       </div>
 
-      <main className="mt-[132px] pb-56 max-w-[358px] px-4 mx-auto">
-        <section className="text-white">
+      <main className="mt-[132px] max-w-[358px] px-4 mx-auto">
+        <motion.section className="text-white" ref={section1Ref} initial={inViewFadeOut} animate={opacitySection1}>
           <p className="text-blue-gradient font-montserrat font-bold leading-5 tracking-[-0.02em] text-xs">Hi, my name is</p>
           <h1 className="mt-4 font-sans font-extrabold text-[32px] leading-[46px]">Vinicius Rodrigues</h1>
           <h2 className="mt-4 font-sans font-bold text-[20px] leading-[33px] tracking-[-0.02em] text-blue-gradient">Creating solutions with code</h2>
@@ -27,9 +100,9 @@ export default function Home () {
           </button>
             
           <img src="/assets/hero.png" alt="" className="mt-32 block hero-image"/>
-        </section>
+        </motion.section>
 
-        <section className="mt-[398px]">
+        <motion.section className="mt-[398px]" ref={section2Ref} initial={inViewFadeOut} animate={opacitySection2}>
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient">02. About</h2>
           <p className="mt-[92px] font-montserrat text-sm leading-[14px] tracking-[-0.02em] text-white leading-[20px]">
             Hi there! My name is Vinícius and I am passionate about creating 
@@ -61,9 +134,9 @@ export default function Home () {
           <div className="flex justify-center">
             <img src="/assets/avatar.png" alt="Vinícius Rodrigues" className="mt-14"/>
           </div>
-        </section>
+        </motion.section>
 
-        <section className="mt-[398px]">
+        <motion.section className="mt-[398px]" ref={section3Ref} initial={inViewFadeOut} animate={opacitySection3}>
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient">03. TECHNOLOGIES</h2>
           <div className="mt-[92px] flex flex-col items-center">
 
@@ -188,9 +261,9 @@ export default function Home () {
             </div>
 
           </div>
-        </section>
+        </motion.section>
 
-        <section className="mt-[398px]">
+        <motion.section className="mt-[398px]" ref={section4Ref} initial={inViewFadeOut} animate={opacitySection4}>
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient">04. PROJECTS</h2>
           <div className="mt-[92px] flex flex-col gap-28">
 
@@ -264,17 +337,17 @@ export default function Home () {
 
 
           </div>
-        </section>
+        </motion.section>
 
-        <section className="mt-[398px]">
+        <motion.section className="mt-[398px] pb-56" ref={section5Ref} initial={inViewFadeOut} animate={opacitySection5}>
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient">05. CONTACT</h2>
           <div>
             <h3 className="mt-[92px] text-center font-montserrat font-bold text-[23px] text-blue-gradient">Get in touch</h3>
             <div className="mt-7 w-[200px] bg-blue-gradient h-[1px] mx-auto"></div>
             <div className="flex gap-7 justify-center mt-14">
-              <img src="/assets/github.svg" alt="" className="w-[33px]"/>
-              <img src="/assets/mail.svg" alt="" />
-              <img src="/assets/linkedin.svg" alt="" />
+              <img  src="/assets/github.svg" alt="" className="w-[33px] cursor-pointer"/>
+              <img  src="/assets/mail.svg" alt=""  className="cursor-pointer"/>
+              <img  src="/assets/linkedin.svg" alt=""  className="cursor-pointer"/>
             </div>
             <div className="mt-20 flex justify-center">
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jairrodriguesmd@gmail.com" target="_blank" className="cursor-pointer button-properties py-3 px-16 mt-[78px] transition-colors hover:bg-blue-300 hover:text-blue-500">
@@ -282,7 +355,7 @@ export default function Home () {
               </a>
             </div>
           </div>
-        </section>  
+        </motion.section>  
       </main>
     </div>
   )
