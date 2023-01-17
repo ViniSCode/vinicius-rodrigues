@@ -10,11 +10,11 @@ export default function Home () {
         </header>
       </div>
 
-      <main className="mt-[232px] pb-56 max-w-[358px] px-4 mx-auto">
+      <main className="mt-[132px] pb-56 max-w-[358px] px-4 mx-auto">
         <section className="text-white">
-          <p className="text-blue-gradient font-montserrat font-bold leading-5 tracking-[-0.02em]">Hi, my name is</p>
-          <h1 className="mt-4 font-sans font-extrabold text-[34px] leading-[46px]">Vinicius Rodrigues</h1>
-          <h2 className="mt-4 font-sans font-bold text-2xl leading-[33px] tracking-[-0.02em] text-blue-gradient">Creating solutions with code</h2>
+          <p className="text-blue-gradient font-montserrat font-bold leading-5 tracking-[-0.02em] text-xs">Hi, my name is</p>
+          <h1 className="mt-4 font-sans font-extrabold text-[32px] leading-[46px]">Vinicius Rodrigues</h1>
+          <h2 className="mt-4 font-sans font-bold text-[20px] leading-[33px] tracking-[-0.02em] text-blue-gradient">Creating solutions with code</h2>
           <p className="mt-6 font-montserrat font-semibold text-xs leading-[14px] tracking-[-0.02em] text-gray-250">As a passionate technology enthusiast and <span className="text-blue-500">front-end</span> developer 
             student, I am dedicated to staying current with the latest 
             development trends and expanding my knowledge base through 
@@ -30,8 +30,8 @@ export default function Home () {
         </section>
 
         <section className="mt-[398px]">
-          <h2 className="text-center font-montserrat font-bold text-[33px] leading-10 tracking-[-0.02em] text-blue-gradient">02. About</h2>
-          <p className="mt-[152px] font-montserrat text-sm leading-[14px] tracking-[-0.02em] text-white leading-[20px]">
+          <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient">02. About</h2>
+          <p className="mt-[92px] font-montserrat text-sm leading-[14px] tracking-[-0.02em] text-white leading-[20px]">
             Hi there! My name is Vinícius and I am passionate about creating 
             engaging web experiences. I have a background in System Analysis and Development 
             and have been studying Front End Development for the past two years. 
@@ -60,6 +60,158 @@ export default function Home () {
 
           <div className="flex justify-center">
             <img src="/assets/avatar.png" alt="Vinícius Rodrigues" className="mt-14"/>
+          </div>
+        </section>
+
+        <section className="mt-[398px]">
+          <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient">03. TECHNOLOGIES</h2>
+          <div className="mt-[92px]">
+
+            <div className="max-w-[214px]">
+              <div className="flex items-center justify-center">
+                <img src="/assets/react.svg" alt="" className=""/>
+              </div>
+              <strong className="mt-6 text-white text-[28px] text-center block">React.JS</strong>
+              <span className="mt-4 block text-gray-600">Expert in React.js, creating professional projects.</span>
+              <ol className="ml-4 mt-2 list-disc text-gray-600">
+                <li>Context API</li>
+                <li>Hooks</li>
+                <li>Stat</li>
+                <li>Props</li>
+                <li>API</li>
+              </ol>
+            </div>
+            
+            <div className="max-w-[214px] mt-8">
+              <div className="flex items-center justify-center">
+                <img src="/assets/react.svg" alt="" className=""/>
+              </div>
+              <strong className="mt-6 text-white text-[28px] text-center block">React.JS</strong>
+              <span className="mt-4 block text-gray-600">Expert in React.js, creating professional projects.</span>
+              <ol className="ml-4 mt-2 list-disc text-gray-600">
+                <li>Context API</li>
+                <li>Hooks</li>
+                <li>Stat</li>
+                <li>Props</li>
+                <li>API</li>
+              </ol>
+            </div>
+            
+            <div className="max-w-[214px] mt-8">
+              <div className="flex items-center justify-center">
+                <img src="/assets/react.svg" alt="" className=""/>
+              </div>
+              <strong className="mt-6 text-white text-[28px] text-center block">React.JS</strong>
+              <span className="mt-4 block text-gray-600">Expert in React.js, creating professional projects.</span>
+              <ol className="ml-4 mt-2 list-disc text-gray-600">
+                <li>Context API</li>
+                <li>Hooks</li>
+                <li>Stat</li>
+                <li>Props</li>
+                <li>API</li>
+              </ol>
+            </div>
+            
+            <div className="max-w-[214px] mt-8">
+              <div className="flex items-center justify-center">
+                <img src="/assets/react.svg" alt="" className=""/>
+              </div>
+              <strong className="mt-6 text-white text-[28px] text-center block">React.JS</strong>
+              <span className="mt-4 block text-gray-600">Expert in React.js, creating professional projects.</span>
+              <ol className="ml-4 mt-2 list-disc text-gray-600">
+                <li>Context API</li>
+                <li>Hooks</li>
+                <li>Stat</li>
+                <li>Props</li>
+                <li>API</li>
+              </ol>
+            </div>
+
+            <div className="max-w-[214px]">
+              <div className="flex items-center justify-center">
+                <img src="/assets/react.svg" alt="" className=""/>
+              </div>
+              <strong className="mt-6 text-white text-[28px] text-center block">React.JS</strong>
+              <span className="mt-4 block text-gray-600">Expert in React.js, creating professional projects.</span>
+              <ol className="ml-4 mt-2 list-disc text-gray-600">
+                <li>Context API</li>
+                <li>Hooks</li>
+                <li>Stat</li>
+                <li>Props</li>
+                <li>API</li>
+              </ol>
+            </div>
+            
+            <div className="max-w-[214px] mt-8">
+              <div className="flex items-center justify-center">
+                <img src="/assets/react.svg" alt="" className=""/>
+              </div>
+              <strong className="mt-6 text-white text-[28px] text-center block">React.JS</strong>
+              <span className="mt-4 block text-gray-600">Expert in React.js, creating professional projects.</span>
+              <ol className="ml-4 mt-2 list-disc text-gray-600">
+                <li>Context API</li>
+                <li>Hooks</li>
+                <li>Stat</li>
+                <li>Props</li>
+                <li>API</li>
+              </ol>
+            </div>
+            
+            <div className="max-w-[214px] mt-8">
+              <div className="flex items-center justify-center">
+                <img src="/assets/react.svg" alt="" className=""/>
+              </div>
+              <strong className="mt-6 text-white text-[28px] text-center block">React.JS</strong>
+              <span className="mt-4 block text-gray-600">Expert in React.js, creating professional projects.</span>
+              <ol className="ml-4 mt-2 list-disc text-gray-600">
+                <li>Context API</li>
+                <li>Hooks</li>
+                <li>Stat</li>
+                <li>Props</li>
+                <li>API</li>
+              </ol>
+            </div>
+            
+            <div className="max-w-[214px] mt-8">
+              <div className="flex items-center justify-center">
+                <img src="/assets/react.svg" alt="" className=""/>
+              </div>
+              <strong className="mt-6 text-white text-[28px] text-center block">React.JS</strong>
+              <span className="mt-4 block text-gray-600">Expert in React.js, creating professional projects.</span>
+              <ol className="ml-4 mt-2 list-disc text-gray-600">
+                <li>Context API</li>
+                <li>Hooks</li>
+                <li>Stat</li>
+                <li>Props</li>
+                <li>API</li>
+              </ol>
+            </div>
+
+          </div>
+        </section>
+
+        <section className="mt-[398px]">
+          <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient">04. PROJECTS</h2>
+          <div className="mt-[92px]">
+            <div>
+              <img src="/assets/dopeshoe.png" alt="" className="shadow-sm"/>
+              <span className="block mt-11">Personal Project</span>
+              <span className="mt-2 block font-roboto font-normal text-[22px] text-blue-gradient">Dopeshoe</span>
+              <p className="text-sm mt-4">
+                DopeShoe is an e-commerce website built using NextJS, Stripe, 
+                Hygraph, Graphql(URQL), Typescript and styled with 
+                Tailwindcss. It allows users to buy shoes, view their shopping 
+                cart, and see past orders. It includes features like responsive 
+                layout and search bar with filters.
+              </p>
+              <div className="mt-4">
+                <span className="text-sm text-gray-600 font-medium">NextJS, Stripe, Hygraph, Graphql(URQL), Typescript, Tailwindcss.</span>
+              </div>
+              <div className="flex items-center gap-4 mt-4">
+                <img src="/assets/github.svg" alt="" className="cursor-pointer"/>
+                <img src="/assets/link.svg" alt="" className="cursor-pointer" />
+              </div>
+            </div>
           </div>
         </section>
       </main>
