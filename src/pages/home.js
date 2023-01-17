@@ -22,11 +22,11 @@ export default function Home () {
             Currently, I am focused on <span className="text-blue-500">Next.js</span> and using my expertise to build 
             intuitive, effective code solutions.
           </p>
-          <button className="button-properties py-3 px-4 mt-[78px]">
+          <button className="button-properties py-3 px-4 mt-[78px] transition-colors hover:bg-blue-300 hover:text-blue-500">
             Check out my projects
           </button>
             
-          <img src="/assets/hero.png" alt="" className="mt-9 hero-image"/>
+          <img src="/assets/hero.png" alt="" className="mt-32 block hero-image"/>
         </section>
 
         <section className="mt-[398px]">
@@ -247,18 +247,14 @@ export default function Home () {
             </div>
 
             <div>
-              <img src="/assets/dopeshoe.png" alt="" className="shadow-sm"/>
+              <img src="/assets/monances.png" alt="" className="shadow-sm"/>
               <span className="block mt-11">Personal Project</span>
-              <span className="mt-2 block font-roboto font-normal text-[22px] text-blue-gradient">Dopeshoe</span>
+              <span className="mt-2 block font-roboto font-normal text-[22px] text-blue-gradient">Monances</span>
               <p className="text-sm mt-4">
-                DopeShoe is an e-commerce website built using NextJS, Stripe, 
-                Hygraph, Graphql(URQL), Typescript and styled with 
-                Tailwindcss. It allows users to buy shoes, view their shopping 
-                cart, and see past orders. It includes features like responsive 
-                layout and search bar with filters.
+                Track your expenses and incomes, set and monitor custom budgets, view your balance with an interactive chart, and switch to dark mode for comfortable use.
               </p>
               <div className="mt-4">
-                <span className="text-sm text-gray-600 font-medium">NextJS, Stripe, Hygraph, Graphql(URQL), Typescript, Tailwindcss.</span>
+                <span className="text-sm text-gray-600 font-medium">Html, Css, Javascript, ChartJS, sweetalert2, scrollrevealjs.</span>
               </div>
               <div className="flex items-center gap-4 mt-4">
                 <img src="/assets/github.svg" alt="" className="cursor-pointer"/>
@@ -269,6 +265,24 @@ export default function Home () {
 
           </div>
         </section>
+
+        <section className="mt-[398px]">
+          <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient">05. CONTACT</h2>
+          <div>
+            <h3 className="mt-[92px] text-center font-montserrat font-bold text-[23px] text-blue-gradient">Get in touch</h3>
+            <div className="mt-7 w-[200px] bg-blue-gradient h-[1px] mx-auto"></div>
+            <div className="flex gap-7 justify-center mt-14">
+              <img src="/assets/github.svg" alt="" className="w-[33px]"/>
+              <img src="/assets/mail.svg" alt="" />
+              <img src="/assets/linkedin.svg" alt="" />
+            </div>
+            <div className="mt-20 flex justify-center">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jairrodriguesmd@gmail.com" target="_blank" className="cursor-pointer button-properties py-3 px-16 mt-[78px] transition-colors hover:bg-blue-300 hover:text-blue-500">
+                Say Hello
+              </a>
+            </div>
+          </div>
+        </section>  
       </main>
     </div>
   )
