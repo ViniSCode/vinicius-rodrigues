@@ -192,7 +192,8 @@ export default function Home () {
 
         <section className="mt-[398px]">
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient">04. PROJECTS</h2>
-          <div className="mt-[92px]">
+          <div className="mt-[92px] flex flex-col gap-28">
+
             <div>
               <img src="/assets/dopeshoe.png" alt="" className="shadow-sm"/>
               <span className="block mt-11">Personal Project</span>
@@ -212,6 +213,60 @@ export default function Home () {
                 <img src="/assets/link.svg" alt="" className="cursor-pointer" />
               </div>
             </div>
+
+            <div>
+              <img src="/assets/githubstats.png" alt="" className="shadow-sm"/>
+              <span className="block mt-11">Personal Project</span>
+              <span className="mt-2 block font-roboto font-normal text-[22px] text-blue-gradient">GithubStats</span>
+              <p className="text-sm mt-4">
+                Githubstats is a web app that allows users to search for Github users and organizations, and access their profile information such as repositories, starred repositories, followers and members of an organization. It is designed to provide a simple and efficient way to view a user's Github data.
+              </p>
+              <div className="mt-4">
+                <span className="text-sm text-gray-600 font-medium">NextJS, Typescript, Chakra UI, GraphQL(Apollo Client), Codegen.</span>
+              </div>
+              <div className="flex items-center gap-4 mt-4">
+                <img src="/assets/github.svg" alt="" className="cursor-pointer"/>
+                <img src="/assets/link.svg" alt="" className="cursor-pointer" />
+              </div>
+            </div>
+
+            <div>
+              <img src="/assets/devblog.png" alt="" className="shadow-sm"/>
+              <span className="block mt-11">Personal Project</span>
+              <span className="mt-2 block font-roboto font-normal text-[22px] text-blue-gradient">DevBlog</span>
+              <p className="text-sm mt-4">
+                DEVBLOG is a web application that allows users to browse and engage with blog posts, while also providing an administrative capability for the management of content on the Prismic CMS platform. Additionally, the application provides user authentication capabilities through Firebase Auth.
+              </p>
+              <div className="mt-4">
+                <span className="text-sm text-gray-600 font-medium">ReactJS, Firebase, Prismic CMS, Sass.</span>
+              </div>
+              <div className="flex items-center gap-4 mt-4">
+                <img src="/assets/github.svg" alt="" className="cursor-pointer"/>
+                <img src="/assets/link.svg" alt="" className="cursor-pointer" />
+              </div>
+            </div>
+
+            <div>
+              <img src="/assets/dopeshoe.png" alt="" className="shadow-sm"/>
+              <span className="block mt-11">Personal Project</span>
+              <span className="mt-2 block font-roboto font-normal text-[22px] text-blue-gradient">Dopeshoe</span>
+              <p className="text-sm mt-4">
+                DopeShoe is an e-commerce website built using NextJS, Stripe, 
+                Hygraph, Graphql(URQL), Typescript and styled with 
+                Tailwindcss. It allows users to buy shoes, view their shopping 
+                cart, and see past orders. It includes features like responsive 
+                layout and search bar with filters.
+              </p>
+              <div className="mt-4">
+                <span className="text-sm text-gray-600 font-medium">NextJS, Stripe, Hygraph, Graphql(URQL), Typescript, Tailwindcss.</span>
+              </div>
+              <div className="flex items-center gap-4 mt-4">
+                <img src="/assets/github.svg" alt="" className="cursor-pointer"/>
+                <img src="/assets/link.svg" alt="" className="cursor-pointer" />
+              </div>
+            </div>
+
+
           </div>
         </section>
       </main>
