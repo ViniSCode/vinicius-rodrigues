@@ -138,7 +138,7 @@ export default function Home () {
 
         <motion.section className="mt-[398px]" ref={section3Ref} initial={inViewFadeOut} animate={opacitySection3}>
           <h2 className="text-center font-montserrat font-bold text-[28px] text-blue-gradient md:text-[40px]">03. TECHNOLOGIES</h2>
-          <div className="mt-[92px] md:mt-[152px] flex flex-col items-center md:flex-row md:flex-wrap md:justify-between">
+          <div className="mt-[92px] md:mt-[152px] flex flex-col items-center md:flex-row md:flex-wrap md:justify-between md:items-center">
 
             <div className="max-w-[214px]">
               <div className="flex items-center justify-center">
@@ -155,7 +155,7 @@ export default function Home () {
               </ol>
             </div>
             
-            <div className="max-w-[214px] mt-8">
+            <div className="max-w-[214px] mt-8 md:mt-0">
               <div className="flex items-center justify-center">
                 <img src="/assets/next.svg" alt="" className=""/>
               </div>
@@ -200,7 +200,7 @@ export default function Home () {
               </ol>
             </div>
 
-            <div className="max-w-[214px]">
+            <div className="max-w-[214px] mt-8">
               <div className="flex items-center justify-center">
                 <img src="/assets/tailwind.svg" alt="" className=""/>
               </div>
