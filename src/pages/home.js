@@ -74,7 +74,7 @@ export default function Home () {
   
   return (
     <div className="container snap-start snap-mandatory scroll-smooth mx-auto">
-      <div className="menu-bg-blue-gradient fixed top-0 left-0 right-0 shadow-sm z-[20]">
+      <div className="lg:hidden menu-bg-blue-gradient fixed top-0 left-0 right-0 shadow-sm z-[20]">
         <header className="pt-[22px] pb-[22px] w-full max-w-[358px] md:max-w-[628px] px-4 mx-auto">
           <nav className="flex items-center justify-between">
             <span className="font-montserrat font-bold text-sm leading-[17px] tracking-[-0.02em] text-blue-gradient">VINÍCIUS RODRIGUES</span>
@@ -82,57 +82,75 @@ export default function Home () {
           </nav>
         </header>
       </div>
+      <div className="hidden lg:block max-w-[1283px] mx-auto mt-8 px-4">
+        <nav className='flex items-center justify-between'>
+          <span className="text-blue-gradient font-bold leading-5 tracking-[-0.02em] text-sm">VINÍCIUS RODRIGUES</span>
+          <ul className='flex items-center gap-8 font-montserrat font-bold leading-5 tracking-[-0.02em] text-sm'>      
+            <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>01.HOME</a></li>
+            <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>02.ABOUT</a></li>
+            <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>03.TECHNOLOGIES</a></li>
+            <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>03.PROJECTS</a></li>
+            <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>04.CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
 
-      <main className="mt-[132px] md:mt-[252px] max-w-[358px] md:max-w-[628px] px-4 mx-auto">
-        <motion.section className="text-white" ref={section1Ref} initial={inViewFadeOut} animate={opacitySection1}>
-          <p className="text-blue-gradient font-montserrat font-bold text-xs md:text-base">Hi, my name is</p>
-          <h1 className="mt-4 font-sans font-extrabold text-[32px] md:text-[58px]">Vinicius Rodrigues</h1>
-          <h2 className="mt-4 font-sans font-bold text-[20px] text-blue-gradient md:text-[38px]">Creating solutions with code</h2>
-          <p className="mt-6 font-montserrat font-semibold text-xs text-gray-250 md:text-sm">As a passionate technology enthusiast and <span className="text-blue-500">front-end</span> developer 
-            student, I am dedicated to staying current with the latest 
-            development trends and expanding my knowledge base through 
-            continuous learning and experimentation with new technologies. 
-            Currently, I am focused on <span className="text-blue-500">Next.js</span> and using my expertise to build 
-            intuitive, effective code solutions.
-          </p>
-          <button className="button-properties py-3 px-4 mt-[78px] transition-colors hover:bg-blue-300 hover:text-blue-500">
-            Check out my projects
-          </button>
+      <main className="mt-[132px] md:mt-[252px] lg:mt-[152px] max-w-[358px] md:max-w-[628px] lg:max-w-[1283px] px-4 mx-auto">
+        <motion.section className="text-white lg:relative" ref={section1Ref} initial={inViewFadeOut} animate={opacitySection1}>
+          <div className='lg:max-w-[600px]'>
+            <p className="text-blue-gradient font-montserrat font-bold text-xs md:text-base">Hi, my name is</p>
+            <h1 className="mt-4 font-sans font-extrabold text-[32px] md:text-[58px] lg:text-[52px]">Vinicius Rodrigues</h1>
+            <h2 className="mt-4 font-sans font-bold text-[20px] text-blue-gradient md:text-[38px] lg:text-[34px]">Creating solutions with code</h2>
+            <p className="lg:max-w-[510px] mt-6 font-montserrat font-semibold text-xs text-gray-250 md:text-sm lg:text-xs">As a passionate technology enthusiast and <span className="text-blue-500">front-end</span> developer 
+              student, I am dedicated to staying current with the latest 
+              development trends and expanding my knowledge base through 
+              continuous learning and experimentation with new technologies. 
+              Currently, I am focused on <span className="text-blue-500">Next.js</span> and using my expertise to build 
+              intuitive, effective code solutions.
+            </p>
+            <button className="button-properties py-3 px-4 lg:py-4 lg:px-6 mt-[78px] transition-colors hover:bg-blue-300 hover:text-blue-500 lg:mt-[72px]">
+              Check out my projects
+            </button>
+          </div>
             
-          <img src="/assets/hero.svg" alt="" className="mt-32 block w-[310.38px] hero-image md:mx-auto md:w-[520.45px]"/>
+          <img src="/assets/hero.svg" alt="" className="mt-32 block w-[310.38px] static hero-image md:mx-auto md:w-[520.45px] lg:absolute lg:top-0 lg:bottom-0 lg:left-[34rem] lg:mt-0 lg:w-[480px]"/>
         </motion.section>
 
         <motion.section className="mt-[398px]" ref={section2Ref} initial={inViewFadeOut} animate={opacitySection2}>
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">02. About</h2>
-          <p className="mt-[92px] md:mt-[152px] font-montserrat text-sm text-white leading-[20px]">
-            Hi there! My name is Vinícius and I am passionate about creating 
-            engaging web experiences. I have a background in System Analysis and Development 
-            and have been studying Front End Development for the past two years. 
-            My technical skills include technologies 
-            such as  <span className="text-blue-500">React, Next.JS, and Typescript</span>.
-          </p>
-          <p className="mt-4 md:mt-[20px] font-montserrat text-sm leading-[14px] tracking-[-0.02em] text-white leading-[20px]">
-            I have experience working on personal projects, including:
-          </p>
-          <ol className="mt-4 ml-4 md:mt-[20px] font-montserrat text-sm leading-[14px] tracking-[-0.02em] text-white leading-[20px] list-disc">
-            <li className="mt-4">DopeShoe, a NextJS application that uses <span className="text-blue-500">Stripe, GraphQL (URQL),</span> Typescript, <span className="text-blue-500">Tailwind,</span> and <span className="text-blue-500">Hygraph</span></li>
-            <li className="mt-4">Githubstats, a NextJS application that uses GraphQL <span className="text-blue-500">(Apollo Client)</span>, Typescript, and <span className="text-blue-500">ChakraUI</span> to search for and display statistics from a user's GitHub profile</li>
-            <li className="mt-4">DevBlog, A ReactJS-based blog called DevBlog, using <span className="text-blue-500">firebase, Prismic CMS, and sass</span></li>
-            <li className="mt-4">Monances A simple Finance App built with <span className="text-blue-500">HTML, CSS, and JavaScript</span></li>
-          </ol>
-          <p className="mt-4 md:mt-[20px] font-montserrat text-sm leading-[14px] tracking-[-0.02em] text-white leading-[20px]">
-            In addition to my web development experience, I am currently taking an 
-            online course on Introduction to Computer Science (CS50). 
-            I also have a basic knowledge of design tools like Figma and Photoshop 
-            and programming languages like C, Python, and Java.
-          </p>
-          <p className="mt-4 md:mt-[20px] font-montserrat text-sm leading-[14px] tracking-[-0.02em] text-white leading-[20px]">
-            I am constantly learning and improving my skills in web development and am 
-            dedicated to creating intuitive and user-friendly digital experiences.
-          </p>
+          <div className='lg:flex lg:gap-10'>
+            <div className="lg:max-w-[600px]">
+              <p className="mt-[92px] md:mt-[152px] font-montserrat text-sm text-white leading-[20px]">
+                Hi there! My name is Vinícius and I am passionate about creating 
+                engaging web experiences. I have a background in System Analysis and Development 
+                and have been studying Front End Development for the past two years. 
+                My technical skills include technologies 
+                such as  <span className="text-blue-500">React, Next.JS, and Typescript</span>.
+              </p>
+              <p className="mt-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px]">
+                I have experience working on personal projects, including:
+              </p>
+              <ol className="mt-4 ml-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px] list-disc">
+                <li className="mt-4">DopeShoe, a NextJS application that uses <span className="text-blue-500">Stripe, GraphQL (URQL),</span> Typescript, <span className="text-blue-500">Tailwind,</span> and <span className="text-blue-500">Hygraph</span></li>
+                <li className="mt-4">Githubstats, a NextJS application that uses GraphQL <span className="text-blue-500">(Apollo Client)</span>, Typescript, and <span className="text-blue-500">ChakraUI</span> to search for and display statistics from a user's GitHub profile</li>
+                <li className="mt-4">DevBlog, A ReactJS-based blog called DevBlog, using <span className="text-blue-500">firebase, Prismic CMS, and sass</span></li>
+                <li className="mt-4">Monances A simple Finance App built with <span className="text-blue-500">HTML, CSS, and JavaScript</span></li>
+              </ol>
+              <p className="mt-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px]">
+                In addition to my web development experience, I am currently taking an 
+                online course on Introduction to Computer Science (CS50). 
+                I also have a basic knowledge of design tools like Figma and Photoshop 
+                and programming languages like C, Python, and Java.
+              </p>
+              <p className="mt-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px]">
+                I am constantly learning and improving my skills in web development and am 
+                dedicated to creating intuitive and user-friendly digital experiences.
+              </p>
+            </div>
 
-          <div className="flex justify-center">
-            <img src="/assets/avatar.png" alt="Vinícius Rodrigues" className="mt-14 md:mt-[92px] w-[283px] md:w-[390px]"/>
+            <div className="flex justify-center">
+              <img src="/assets/avatar.png" alt="Vinícius Rodrigues" className="mt-14 md:mt-[92px] w-[283px] md:w-[390px]"/>
+            </div>
           </div>
         </motion.section>
 
