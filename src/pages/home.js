@@ -82,7 +82,7 @@ export default function Home () {
           </nav>
         </header>
       </div>
-      <div className="hidden lg:block max-w-[1283px] mx-auto mt-8 px-4">
+      <div className="hidden lg:block lg:max-w-[1283px] mx-auto mt-8 px-4">
         <nav className='flex items-center justify-between'>
           <span className="text-blue-gradient font-bold leading-5 tracking-[-0.02em] text-sm">VINÍCIUS RODRIGUES</span>
           <ul className='flex items-center gap-8 font-montserrat font-bold leading-5 tracking-[-0.02em] text-sm'>      
@@ -96,7 +96,7 @@ export default function Home () {
       </div>
 
       <main className="mt-[132px] md:mt-[252px] lg:mt-[152px] max-w-[358px] md:max-w-[628px] lg:max-w-[1283px] px-4 mx-auto">
-        <motion.section className="text-white lg:relative" ref={section1Ref} initial={inViewFadeOut} animate={opacitySection1}>
+        <motion.section className="text-white lg:flex items-center justify-between" ref={section1Ref} initial={inViewFadeOut} animate={opacitySection1}>
           <div className='lg:max-w-[600px]'>
             <p className="text-blue-gradient font-montserrat font-bold text-xs md:text-base">Hi, my name is</p>
             <h1 className="mt-4 font-sans font-extrabold text-[32px] md:text-[58px] lg:text-[52px]">Vinicius Rodrigues</h1>
@@ -113,12 +113,12 @@ export default function Home () {
             </button>
           </div>
             
-          <img src="/assets/hero.svg" alt="" className="mt-32 block w-[310.38px] static hero-image md:mx-auto md:w-[520.45px] lg:absolute lg:top-0 lg:bottom-0 lg:left-[34rem] lg:mt-0 lg:w-[480px]"/>
+          <img src="/assets/hero.svg" alt="" className="mt-32 block w-[310.38px] static hero-image md:w-[520.45px] lg:w-[430px] lg:mt-0 xl:w-[480px]"/>
         </motion.section>
 
         <motion.section className="mt-[398px]" ref={section2Ref} initial={inViewFadeOut} animate={opacitySection2}>
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">02. About</h2>
-          <div className='lg:flex lg:gap-10'>
+          <div className='lg:flex lg:gap-16 lg:items-center'>
             <div className="lg:max-w-[600px]">
               <p className="mt-[92px] md:mt-[152px] font-montserrat text-sm text-white leading-[20px]">
                 Hi there! My name is Vinícius and I am passionate about creating 
@@ -148,8 +148,8 @@ export default function Home () {
               </p>
             </div>
 
-            <div className="flex justify-center">
-              <img src="/assets/avatar.png" alt="Vinícius Rodrigues" className="mt-14 md:mt-[92px] w-[283px] md:w-[390px]"/>
+            <div className="flex justify-center mt-14 md:mt-[92px] w-[283px] md:w-[390px] lg:w-[390px]  mx-auto">
+              <img src="/assets/avatar.png" alt="Vinícius Rodrigues" className="block w-full"/>
             </div>
           </div>
         </motion.section>
@@ -281,7 +281,7 @@ export default function Home () {
           </div>
         </motion.section>
 
-        <motion.section className="mt-[398px]" ref={section4Ref} initial={inViewFadeOut} animate={opacitySection4}>
+        <motion.section className="mt-[398px] lg:hidden" ref={section4Ref} initial={inViewFadeOut} animate={opacitySection4}>
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">04. PROJECTS</h2>
           <div className="mt-[92px] md:mt-[152px] flex flex-col gap-28">
             <div>
@@ -354,6 +354,103 @@ export default function Home () {
 
 
           </div>
+        </motion.section>
+
+        <motion.section className="mt-[398px] hidden lg:block relative">
+          <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">04. PROJECTS</h2>
+
+          <div className='mt-[250px] flex items-center'>
+            <div className='w-[512px]'>
+              <img src="/assets/dopeshoe.png" alt="" className="shadow-sm w-full"/>
+            </div>
+              <div className='absolute right-4'>
+                  <span className="block text-end">Personal Project</span>
+                  <span className="block text-end font-roboto font-normal text-[28px] text-blue-gradient mt-1">Dopeshoe</span>
+                  <div className='projects-text-lg w-[580px] px-4 py-4 mt-4'>
+                    <p className="text-base">
+                      DopeShoe is an e-commerce website built using NextJS, Stripe, 
+                      Hygraph, Graphql(URQL), Typescript and styled with 
+                      Tailwindcss. It allows users to buy shoes, view their shopping 
+                      cart, and see past orders. It includes features like responsive 
+                      layout and search bar with filters.
+                    </p>
+                  </div>
+
+                  <span className="text-gray-600 font-medium text-base mt-6 text-end block">NextJS, Stripe, Hygraph, Graphql(URQL), Typescript, Tailwindcss.</span>
+                  
+                  <div className="flex items-center justify-end gap-4 mt-4">
+                    <img src="/assets/github.svg" alt="" className="cursor-pointer w-[25px] transition-filter hover:brightness-150"/>
+                    <img src="/assets/link.svg" alt="" className="cursor-pointer w-[25px] transition-filter hover:brightness-150" />
+                  </div>
+              </div>
+          </div>
+
+          <div className='mt-[250px] flex items-center'>
+            <div className='w-[512px]'>
+              <img src="/assets/githubstats.png" alt="" className="shadow-sm w-full"/>
+            </div>
+              <div className='absolute right-4'>
+                  <span className="block text-end">Personal Project</span>
+                  <span className="block text-end font-roboto font-normal text-[28px] text-blue-gradient mt-1">GithubStats</span>
+                  <div className='projects-text-lg w-[580px] px-4 py-4 mt-4'>
+                    <p className="text-base">
+                      Githubstats is a web app that allows users to search for Github users and organizations, and access their profile information such as repositories, starred repositories, followers and members of an organization. It is designed to provide a simple and efficient way to view a user's Github data.
+                    </p>
+                  </div>
+
+                  <span className="text-gray-600 font-medium text-base mt-6 text-end block">NextJS, Typescript, Chakra UI, GraphQL(Apollo Client), Codegen.</span>
+                  
+                  <div className="flex items-center justify-end gap-4 mt-4">
+                    <img src="/assets/github.svg" alt="" className="cursor-pointer w-[25px] transition-filter hover:brightness-150"/>
+                    <img src="/assets/link.svg" alt="" className="cursor-pointer w-[25px] transition-filter hover:brightness-150" />
+                  </div>
+              </div>
+          </div>
+
+          <div className='mt-[250px] flex items-center'>
+            <div className='w-[512px]'>
+              <img src="/assets/devblog.png" alt="" className="shadow-sm w-full"/>
+            </div>
+              <div className='absolute right-4'>
+                  <span className="block text-end">Personal Project</span>
+                  <span className="block text-end font-roboto font-normal text-[28px] text-blue-gradient mt-1">DevBlog</span>
+                  <div className='projects-text-lg w-[580px] px-4 py-4 mt-4'>
+                    <p className="text-base">
+                      DEVBLOG is a web application that allows users to browse and engage with blog posts, while also providing an administrative capability for the management of content on the Prismic CMS platform. Additionally, the application provides user authentication capabilities through Firebase Auth.
+                    </p>
+                  </div>
+
+                  <span className="text-gray-600 font-medium text-base mt-6 text-end block">ReactJS, Firebase, Prismic CMS, Sass.</span>
+                  
+                  <div className="flex items-center justify-end gap-4 mt-4">
+                    <img src="/assets/github.svg" alt="" className="cursor-pointer w-[25px] transition-filter hover:brightness-150"/>
+                    <img src="/assets/link.svg" alt="" className="cursor-pointer w-[25px] transition-filter hover:brightness-150" />
+                  </div>
+              </div>
+          </div>
+
+          <div className='mt-[250px] flex items-center'>
+            <div className='w-[512px]'>
+              <img src="/assets/monances.png" alt="" className="shadow-sm w-full"/>
+            </div>
+              <div className='absolute right-4'>
+                  <span className="block text-end">Personal Project</span>
+                  <span className="block text-end font-roboto font-normal text-[28px] text-blue-gradient mt-1">Monances</span>
+                  <div className='projects-text-lg w-[580px] px-4 py-4 mt-4'>
+                    <p className="text-base drop-shadow-lg">
+                      Track your expenses and incomes, set and monitor custom budgets, view your balance with an interactive chart, and switch to dark mode for comfortable use.
+                    </p>
+                  </div>
+
+                  <span className="text-gray-600 font-medium text-base mt-6 text-end block">Html, Css, Javascript, ChartJS, sweetalert2, scrollrevealjs.</span>
+                  
+                  <div className="flex items-center justify-end gap-4 mt-4">
+                    <img src="/assets/github.svg" alt="" className="cursor-pointer w-[25px] transition-filter hover:brightness-150"/>
+                    <img src="/assets/link.svg" alt="" className="cursor-pointer w-[25px] transition-filter hover:brightness-150" />
+                  </div>
+              </div>
+          </div>
+
         </motion.section>
 
         <motion.section className="mt-[398px] pb-56" ref={section5Ref} initial={inViewFadeOut} animate={opacitySection5}>
