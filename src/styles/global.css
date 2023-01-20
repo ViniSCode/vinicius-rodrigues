@@ -51,5 +51,9 @@ body {
   .projects-text-lg {    
     background: linear-gradient(90.04deg, #4AA6F7 -50%, #1141BD 100%);
     box-shadow: 0px 0px 29px 1px rgba(74, 166, 247, 0.25);
+    height: 135px;
+    display: flex; 
+    align-items: center;
+    
   }
 }

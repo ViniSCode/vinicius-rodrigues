@@ -34,6 +34,7 @@ export default function Home () {
   const opacitySection3 = useAnimation();
   const opacitySection4 = useAnimation();
   const opacitySection5 = useAnimation();
+  
   const inViewFadeIn = { transition: { duration: 0.5, ease: 'easeInOut', delay: 0.2, delayChildren: 0.5}, opacity: 1}
   const inViewFadeOut = { transition: { duration: 0.5, ease: 'easeInOut'}, opacity: 0 }
 
@@ -77,7 +78,7 @@ export default function Home () {
       <div className="lg:hidden menu-bg-blue-gradient fixed top-0 left-0 right-0 shadow-sm z-[20]">
         <header className="pt-[22px] pb-[22px] w-full max-w-[358px] md:max-w-[628px] px-4 mx-auto">
           <nav className="flex items-center justify-between">
-            <span className="font-montserrat font-bold text-sm leading-[17px] tracking-[-0.02em] text-blue-gradient">VINÍCIUS RODRIGUES</span>
+            <motion.span  className="font-montserrat font-bold text-sm leading-[17px] tracking-[-0.02em] text-blue-gradient">VINÍCIUS RODRIGUES</motion.span>
             <img src="/assets/menu.svg" alt="" />
           </nav>
         </header>
@@ -119,7 +120,7 @@ export default function Home () {
         <motion.section className="mt-[398px]" ref={section2Ref} initial={inViewFadeOut} animate={opacitySection2}>
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">02. About</h2>
           <div className='lg:flex lg:gap-16 lg:items-center xl:items-center'>
-            <div className="lg:max-w-[600px] xl:max-w-[700px]">
+            <div className="lg:max-w-[600px] xl:max-w-[792px]">
               <p className="mt-[92px] md:mt-[152px] font-montserrat text-sm text-white leading-[20px] xl:text-base xl:leading-[28px]">
                 Hi there! My name is Vinícius and I am passionate about creating 
                 engaging web experiences. I have a background in System Analysis and Development 
