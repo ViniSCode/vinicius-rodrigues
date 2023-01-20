@@ -95,13 +95,13 @@ export default function Home () {
         </nav>
       </div>
 
-      <main className="mt-[132px] md:mt-[252px] lg:mt-[152px] max-w-[358px] md:max-w-[628px] lg:max-w-[1283px] px-4 mx-auto">
+      <main className="mt-[132px] md:mt-[252px] lg:mt-[152px] xl:mt-[198px] max-w-[358px] md:max-w-[628px] lg:max-w-[1283px] px-4 mx-auto">
         <motion.section className="text-white lg:flex items-center justify-between" ref={section1Ref} initial={inViewFadeOut} animate={opacitySection1}>
-          <div className='lg:max-w-[600px]'>
+          <div className='lg:max-w-[600px] xl:max-w-[782px]'>
             <p className="text-blue-gradient font-montserrat font-bold text-xs md:text-base">Hi, my name is</p>
-            <h1 className="mt-4 font-sans font-extrabold text-[32px] md:text-[58px] lg:text-[52px]">Vinicius Rodrigues</h1>
-            <h2 className="mt-4 font-sans font-bold text-[20px] text-blue-gradient md:text-[38px] lg:text-[34px]">Creating solutions with code</h2>
-            <p className="lg:max-w-[510px] mt-6 font-montserrat font-semibold text-xs text-gray-250 md:text-sm lg:text-xs">As a passionate technology enthusiast and <span className="text-blue-500">front-end</span> developer 
+            <h1 className="mt-4 font-sans font-extrabold text-[32px] md:text-[58px] lg:text-[52px] xl:text-[62px]">Vinicius Rodrigues</h1>
+            <h2 className="mt-4 font-sans font-bold text-[20px] text-blue-gradient md:text-[38px] lg:text-[34px] xl:text-[50px]">Creating solutions with code</h2>
+            <p className="lg:max-w-[510px] xl:max-w-[700px] xl:text-base mt-6 font-montserrat font-semibold text-xs text-gray-250 md:text-sm lg:text-xs">As a passionate technology enthusiast and <span className="text-blue-500">front-end</span> developer 
               student, I am dedicated to staying current with the latest 
               development trends and expanding my knowledge base through 
               continuous learning and experimentation with new technologies. 
@@ -118,37 +118,37 @@ export default function Home () {
 
         <motion.section className="mt-[398px]" ref={section2Ref} initial={inViewFadeOut} animate={opacitySection2}>
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">02. About</h2>
-          <div className='lg:flex lg:gap-16 lg:items-center'>
-            <div className="lg:max-w-[600px]">
-              <p className="mt-[92px] md:mt-[152px] font-montserrat text-sm text-white leading-[20px]">
+          <div className='lg:flex lg:gap-16 lg:items-center xl:items-center'>
+            <div className="lg:max-w-[600px] xl:max-w-[700px]">
+              <p className="mt-[92px] md:mt-[152px] font-montserrat text-sm text-white leading-[20px] xl:text-base xl:leading-[28px]">
                 Hi there! My name is Vinícius and I am passionate about creating 
                 engaging web experiences. I have a background in System Analysis and Development 
                 and have been studying Front End Development for the past two years. 
                 My technical skills include technologies 
                 such as  <span className="text-blue-500">React, Next.JS, and Typescript</span>.
               </p>
-              <p className="mt-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px]">
+              <p className="mt-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px] xl:text-base xl:leading-[28px]">
                 I have experience working on personal projects, including:
               </p>
-              <ol className="mt-4 ml-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px] list-disc">
+              <ol className="mt-4 ml-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px] list-disc xl:text-base xl:leading-[28px]">
                 <li className="mt-4">DopeShoe, a NextJS application that uses <span className="text-blue-500">Stripe, GraphQL (URQL),</span> Typescript, <span className="text-blue-500">Tailwind,</span> and <span className="text-blue-500">Hygraph</span></li>
                 <li className="mt-4">Githubstats, a NextJS application that uses GraphQL <span className="text-blue-500">(Apollo Client)</span>, Typescript, and <span className="text-blue-500">ChakraUI</span> to search for and display statistics from a user's GitHub profile</li>
                 <li className="mt-4">DevBlog, A ReactJS-based blog called DevBlog, using <span className="text-blue-500">firebase, Prismic CMS, and sass</span></li>
                 <li className="mt-4">Monances A simple Finance App built with <span className="text-blue-500">HTML, CSS, and JavaScript</span></li>
               </ol>
-              <p className="mt-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px]">
+              <p className="mt-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px] xl:text-base xl:leading-[28px]">
                 In addition to my web development experience, I am currently taking an 
                 online course on Introduction to Computer Science (CS50). 
                 I also have a basic knowledge of design tools like Figma and Photoshop 
                 and programming languages like C, Python, and Java.
               </p>
-              <p className="mt-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px]">
+              <p className="mt-4 md:mt-[20px] font-montserrat text-sm text-white leading-[20px] xl:text-base xl:leading-[28px]">
                 I am constantly learning and improving my skills in web development and am 
                 dedicated to creating intuitive and user-friendly digital experiences.
               </p>
             </div>
 
-            <div className="flex justify-center mt-14 md:mt-[92px] w-[283px] md:w-[390px] lg:w-[390px]  mx-auto">
+            <div className="flex justify-center mt-14 md:mt-[92px] w-[283px] md:w-[390px] lg:w-[390px] xl:w-[420px] xl:mt-36  mx-auto">
               <img src="/assets/avatar.png" alt="Vinícius Rodrigues" className="block w-full"/>
             </div>
           </div>
@@ -156,7 +156,7 @@ export default function Home () {
 
         <motion.section className="mt-[398px]" ref={section3Ref} initial={inViewFadeOut} animate={opacitySection3}>
           <h2 className="text-center font-montserrat font-bold text-[28px] text-blue-gradient md:text-[40px]">03. TECHNOLOGIES</h2>
-          <div className="mt-[92px] md:mt-[152px] flex flex-col items-center md:flex-row md:flex-wrap md:justify-between md:items-center">
+          <div className="mt-[92px] md:mt-[152px] flex flex-col items-center md:flex-row md:flex-wrap md:justify-between md:items-center xl:gap-20">
 
             <div className="max-w-[214px]">
               <div className="flex items-center justify-center">
@@ -360,13 +360,13 @@ export default function Home () {
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">04. PROJECTS</h2>
 
           <div className='mt-[250px] flex items-center'>
-            <div className='w-[512px]'>
+            <div className='w-[512px] xl:w-[668px]'>
               <img src="/assets/dopeshoe.png" alt="" className="shadow-sm w-full"/>
             </div>
               <div className='absolute right-4'>
                   <span className="block text-end">Personal Project</span>
                   <span className="block text-end font-roboto font-normal text-[28px] text-blue-gradient mt-1">Dopeshoe</span>
-                  <div className='projects-text-lg w-[580px] px-4 py-4 mt-4'>
+                  <div className='projects-text-lg w-[580px] xl:w-[624px] px-4 py-4 mt-4'>
                     <p className="text-base">
                       DopeShoe is an e-commerce website built using NextJS, Stripe, 
                       Hygraph, Graphql(URQL), Typescript and styled with 
@@ -386,13 +386,13 @@ export default function Home () {
           </div>
 
           <div className='mt-[250px] flex items-center'>
-            <div className='w-[512px]'>
+            <div className='w-[512px] xl:w-[668px]'>
               <img src="/assets/githubstats.png" alt="" className="shadow-sm w-full"/>
             </div>
               <div className='absolute right-4'>
                   <span className="block text-end">Personal Project</span>
                   <span className="block text-end font-roboto font-normal text-[28px] text-blue-gradient mt-1">GithubStats</span>
-                  <div className='projects-text-lg w-[580px] px-4 py-4 mt-4'>
+                  <div className='projects-text-lg w-[580px] xl:w-[624px] px-4 py-4 mt-4'>
                     <p className="text-base">
                       Githubstats is a web app that allows users to search for Github users and organizations, and access their profile information such as repositories, starred repositories, followers and members of an organization. It is designed to provide a simple and efficient way to view a user's Github data.
                     </p>
@@ -408,13 +408,13 @@ export default function Home () {
           </div>
 
           <div className='mt-[250px] flex items-center'>
-            <div className='w-[512px]'>
+            <div className='w-[512px] xl:w-[668px]'>
               <img src="/assets/devblog.png" alt="" className="shadow-sm w-full"/>
             </div>
               <div className='absolute right-4'>
                   <span className="block text-end">Personal Project</span>
                   <span className="block text-end font-roboto font-normal text-[28px] text-blue-gradient mt-1">DevBlog</span>
-                  <div className='projects-text-lg w-[580px] px-4 py-4 mt-4'>
+                  <div className='projects-text-lg w-[580px] xl:w-[624px] px-4 py-4 mt-4'>
                     <p className="text-base">
                       DEVBLOG is a web application that allows users to browse and engage with blog posts, while also providing an administrative capability for the management of content on the Prismic CMS platform. Additionally, the application provides user authentication capabilities through Firebase Auth.
                     </p>
@@ -430,13 +430,13 @@ export default function Home () {
           </div>
 
           <div className='mt-[250px] flex items-center'>
-            <div className='w-[512px]'>
+            <div className='w-[512px] xl:w-[668px]'>
               <img src="/assets/monances.png" alt="" className="shadow-sm w-full"/>
             </div>
               <div className='absolute right-4'>
                   <span className="block text-end">Personal Project</span>
                   <span className="block text-end font-roboto font-normal text-[28px] text-blue-gradient mt-1">Monances</span>
-                  <div className='projects-text-lg w-[580px] px-4 py-4 mt-4'>
+                  <div className='projects-text-lg w-[580px] xl:w-[624px] px-4 py-4 mt-4'>
                     <p className="text-base drop-shadow-lg">
                       Track your expenses and incomes, set and monitor custom budgets, view your balance with an interactive chart, and switch to dark mode for comfortable use.
                     </p>
