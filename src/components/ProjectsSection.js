@@ -20,13 +20,15 @@ export function ProjectsSection({
         </h2>
 
         <div className="mt-[250px] flex items-center">
-          <div className="w-[512px] xl:w-[668px]">
-            <motion.img initial={inViewXFadeOut} animate={img1}
-              src="/assets/dopeshoe.png"
-              alt=""
-              className="shadow-sm w-full"
-            />
-          </div>
+          <a href="https://dopeshoe.vercel.app/" target="_blank" rel="noreferrer">
+            <motion.div  initial={inViewXFadeOut} animate={img1} whileHover={{scale: 1.03}} transition={{duration: 0.2}} className="w-[485px] xl:w-[668px] cursor-pointer">
+              <img
+                src="/assets/dopeshoe.png"
+                alt=""
+                className="shadow-sm w-full"
+              />
+            </motion.div>
+          </a>
           <motion.div className="absolute right-4" initial={inViewYFadeOut} animate={p1}>
             <span className="block text-end">Personal Project</span>
             <span className="block text-end font-roboto font-normal text-[28px] text-blue-gradient mt-1">
@@ -62,13 +64,15 @@ export function ProjectsSection({
         </div>
 
         <div className="mt-[250px] flex items-center">
-          <div className="w-[512px] xl:w-[668px]">
-            <motion.img initial={inViewXFadeOut} animate={img2}
-              src="/assets/githubstats.png"
-              alt=""
-              className="shadow-sm w-full"
-            />
-          </div>
+          <a href="https://dopeshoe.vercel.app/" target="_blank" rel="noreferrer">
+            <motion.div  initial={inViewXFadeOut} animate={img2} whileHover={{scale: 1.03}} transition={{duration: 0.2}} className="w-[485px] xl:w-[668px] cursor-pointer">
+              <img
+                src="/assets/githubstats.png"
+                alt=""
+                className="shadow-sm w-full"
+              />
+            </motion.div>
+          </a>
           <motion.div initial={inViewYFadeOut} animate={p2} className="absolute right-4">
             <span className="block text-end">Personal Project</span>
             <span className="block text-end font-roboto font-normal text-[28px] text-blue-gradient mt-1">
@@ -104,13 +108,15 @@ export function ProjectsSection({
         </div>
 
         <div className="mt-[250px] flex items-center">
-          <div className="w-[512px] xl:w-[668px]">
-            <motion.img initial={inViewXFadeOut} animate={img3}
-              src="/assets/devblog.png"
-              alt=""
-              className="shadow-sm w-full"
-            />
-          </div>
+          <a href="https://dopeshoe.vercel.app/" target="_blank" rel="noreferrer">
+            <motion.div  initial={inViewXFadeOut} animate={img3} whileHover={{scale: 1.03}} transition={{duration: 0.2}} className="w-[485px] xl:w-[668px] cursor-pointer">
+              <img
+                src="/assets/devblog.png"
+                alt=""
+                className="shadow-sm w-full"
+              />
+            </motion.div>
+          </a>
           <motion.div initial={inViewYFadeOut} animate={p3} className="absolute right-4">
             <span className="block text-end">Personal Project</span>
             <span className="block text-end font-roboto font-normal text-[28px] text-blue-gradient mt-1">
@@ -146,13 +152,15 @@ export function ProjectsSection({
         </div>
 
         <div className="mt-[250px] flex items-center">
-          <div className="w-[512px] xl:w-[668px]">
-            <motion.img initial={inViewXFadeOut} animate={img4}
-              src="/assets/monances.png"
-              alt=""
-              className="shadow-sm w-full"
-            />
-          </div>
+          <a href="https://dopeshoe.vercel.app/" target="_blank" rel="noreferrer">
+            <motion.div  initial={inViewXFadeOut} animate={img4} whileHover={{scale: 1.03}} transition={{duration: 0.2}} className="w-[485px] xl:w-[668px] cursor-pointer">
+              <img
+                src="/assets/monances.png"
+                alt=""
+                className="shadow-sm w-full"
+              />
+            </motion.div>
+          </a>
           <motion.div initial={inViewYFadeOut} animate={p4} className="absolute right-4">
             <span className="block text-end">Personal Project</span>
             <span className="block text-end font-roboto font-normal text-[28px] text-blue-gradient mt-1">
@@ -197,7 +205,9 @@ export function ProjectsSection({
         </h2>
         <div className="mt-[92px] md:mt-[152px] flex flex-col gap-28">
           <div>
-            <motion.img src="/assets/dopeshoe.png" alt="" className="shadow-sm" animate={img1} initial={inViewXFadeOut}/>
+            <a href="https://dopeshoe.vercel.app/" rel="noreferrer" target="_blank">
+              <motion.img src="/assets/dopeshoe.png" alt="" className="shadow-sm" animate={img1} initial={inViewXFadeOut}  whileHover={{scale: 1.05}}/>
+            </a>
             <motion.div animate={p1} initial={inViewYFadeOut}>
               <span className="block mt-11">Personal Project</span>
               <span className="mt-2 block font-roboto font-normal text-[22px] md:text-3xl text-blue-gradient md:mt-6">
@@ -231,7 +241,9 @@ export function ProjectsSection({
           </div>
 
           <div>
-            <motion.img src="/assets/githubstats.png" alt="" className="shadow-sm"  animate={img2} initial={inViewXFadeOut}/>
+            <a href="">
+              <motion.img src="/assets/githubstats.png" alt="" className="shadow-sm"  animate={img2} initial={inViewXFadeOut}  whileHover={{scale: 1.05}}/>
+            </a>
             <motion.div animate={p2} initial={inViewYFadeOut}>
               <span className="block mt-11">Personal Project</span>
               <span className="mt-2 block font-roboto font-normal text-[22px] md:text-3xl text-blue-gradient md:mt-6">
@@ -265,7 +277,9 @@ export function ProjectsSection({
           </div>
 
           <div>
-            <motion.img src="/assets/devblog.png" alt="" className="shadow-sm"  animate={img3} initial={inViewXFadeOut}/>
+            <a href="https://dopeshoe.vercel.app/" rel="noreferrer" target="_blank">
+              <motion.img src="/assets/devblog.png" alt="" className="shadow-sm"  animate={img3} initial={inViewXFadeOut}  whileHover={{scale: 1.05}}/>
+            </a>
             <motion.div animate={p3} initial={inViewYFadeOut}>
               <span className="block mt-11">Personal Project</span>
               <span className="mt-2 block font-roboto font-normal text-[22px] md:text-3xl text-blue-gradient md:mt-6">
@@ -299,7 +313,9 @@ export function ProjectsSection({
           </div>
 
           <div>
-            <motion.img src="/assets/monances.png" alt="" className="shadow-sm"  animate={img4} initial={inViewXFadeOut}/>
+            <a href="https://dopeshoe.vercel.app/" rel="noreferrer" target="_blank">
+              <motion.img src="/assets/monances.png" alt="" className="shadow-sm"  animate={img4} initial={inViewXFadeOut}  whileHover={{scale: 1.05}}/>
+            </a>
             <motion.div animate={p4} initial={inViewYFadeOut}>
               <span className="block mt-11">Personal Project</span>
               <span className="mt-2 block font-roboto font-normal text-[22px] md:text-3xl text-blue-gradient md:mt-6">

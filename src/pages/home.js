@@ -91,14 +91,14 @@ export default function Home () {
     } 
     if (section4View) {
       opacitySection4.start(inViewFadeIn);
-      p1.start(inViewYFadeIn04);
-      p2.start(inViewYFadeIn05);
-      p3.start(inViewYFadeIn06);
+      p1.start(inViewYFadeIn07);
+      p2.start(inViewYFadeIn07);
+      p3.start(inViewYFadeIn07);
       p4.start(inViewYFadeIn07);
-      img1.start(inViewXFadeIn04)
-      img2.start(inViewXFadeIn05)
-      img3.start(inViewXFadeIn06)
-      img4.start(inViewXFadeIn07)
+      img1.start(inViewXFadeIn04);
+      img2.start(inViewXFadeIn04);
+      img3.start(inViewXFadeIn04);
+      img4.start(inViewXFadeIn04);
     } 
     if (section5View) {
       console.log('foi')
@@ -118,8 +118,8 @@ export default function Home () {
       </div>
       <div className="hidden lg:block lg:max-w-[1283px] mx-auto mt-8 px-4">
         <nav className='flex items-center justify-between'>
-          <span className="text-blue-gradient font-bold leading-5 tracking-[-0.02em] text-sm">VINÍCIUS RODRIGUES</span>
-          <ul className='flex items-center gap-8 font-montserrat font-bold leading-5 tracking-[-0.02em] text-sm'>      
+          <span className="text-blue-gradient font-bold leading-5 tracking-[-0.02em] lg:text-xs xl:text-sm">VINÍCIUS RODRIGUES</span>
+          <ul className='flex items-center gap-8 font-montserrat font-bold leading-5 tracking-[-0.02em] lg:text-xs xl:text-sm'>      
             <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>01.HOME</a></li>
             <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>02.ABOUT</a></li>
             <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>03.TECHNOLOGIES</a></li>
@@ -129,7 +129,7 @@ export default function Home () {
         </nav>
       </div>
 
-      <main className="mt-[132px] md:mt-[252px] lg:mt-[152px] xl:mt-[198px] max-w-[358px] md:max-w-[628px] lg:max-w-[1283px] px-4 mx-auto">
+      <main className="mt-[132px] md:mt-[252px] lg:mt-[102px] xl:mt-[198px] max-w-[358px] md:max-w-[628px] lg:max-w-[1283px] px-4 mx-auto">
         <HeroSection
           section1Ref={section1Ref} 
           inViewYFadeOut={inViewYFadeOut} inViewXFadeOut={inViewXFadeOut}

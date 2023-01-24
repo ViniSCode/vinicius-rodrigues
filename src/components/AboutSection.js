@@ -58,7 +58,7 @@ export function AboutSection({ section2Ref, p1FadeX, p2FadeX, p3FadeX, listFadeX
           </motion.p>
         </div>
 
-        <div className="flex justify-center mt-14 md:mt-[92px] w-[283px] md:w-[390px] lg:w-[390px] xl:w-[420px] xl:mt-36  mx-auto">
+        <div className="flex justify-center mt-14 md:mt-[92px] w-[283px] md:w-[390px] lg:w-[350px] lg:mt-36 xl:w-[420px] xl:mt-36  mx-auto">
           <motion.img
             animate={imgFadeY} initial={inViewYFadeOut} 
             src="/assets/avatar.png"
