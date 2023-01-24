@@ -13,35 +13,49 @@ export default function Home () {
   const {ref: section4Ref, inView: section4View } = useInView({ triggerOnce: true });
   const {ref: section5Ref, inView: section5View } = useInView({ triggerOnce: true });
 
-  const opacitySection1 = useAnimation();
-  const headerFade = useAnimation();
-  const opacitySection2 = useAnimation();
-  const opacitySection3 = useAnimation();
-  const opacitySection4 = useAnimation();
-  const opacitySection5 = useAnimation();
+  // Section Opacity Animation
+  const opacitySection1 = useAnimation(); const headerFade = useAnimation();
+  const opacitySection2 = useAnimation(); const opacitySection3 = useAnimation();
+  const opacitySection4 = useAnimation(); const opacitySection5 = useAnimation();
 
-  const heroHiFade = useAnimation();
-  const heroTitleFade = useAnimation();
-  const heroSubFade = useAnimation();
-  const heroPFade = useAnimation();
-  const heroButtonFade = useAnimation();
-  const heroImageFade = useAnimation();
-  
+  // Section 1 Animation
+  const heroHiFade = useAnimation(); const heroTitleFade = useAnimation();
+  const heroSubFade = useAnimation(); const heroPFade = useAnimation();
+  const heroButtonFade = useAnimation(); const heroImageFade = useAnimation();
+
+  // Section 2 Animation
+  const p1FadeX = useAnimation(); const p2FadeX = useAnimation();
+  const p3FadeX = useAnimation(); const listFadeX = useAnimation();
+  const p4FadeX = useAnimation(); const imgFadeY = useAnimation();
+
+  // Section 3 Animation
+  const t1 = useAnimation(); const t2 = useAnimation(); const t3 = useAnimation();
+  const t4 = useAnimation(); const t5 = useAnimation(); const t6 = useAnimation();
+  const t7 = useAnimation(); const t8 = useAnimation();
+
+  // Section 4 Animation
+  const p1 = useAnimation(); const p2 = useAnimation(); const p3 = useAnimation();
+  const p4 = useAnimation(); const img1 = useAnimation(); const img2 = useAnimation();
+  const img3 = useAnimation(); const img4 = useAnimation();
+
   const inViewFadeIn = { transition: { duration: 0.5, ease: 'easeInOut', delay: 0.2}, opacity: 1}
   const inViewFadeOut = { transition: { duration: 0.5, ease: 'easeInOut'}, opacity: 0 }
  
-  const inViewXFadeIn = { transition: { duration: 0.5, ease: 'easeInOut', delay: 0.3}, opacity: 1, x: '0'}
-  const inViewXFadeIn04 = { transition: { duration: 0.5, ease: 'easeInOut', delay: 0.4}, opacity: 1, x: '0'}
-  const inViewXFadeIn05 = { transition: { duration: 0.5, ease: 'easeInOut', delay: 0.5}, opacity: 1, x: '0'}
-  const inViewXFadeIn06 = { transition: { duration: 0.5, ease: 'easeInOut', delay: 0.6}, opacity: 1, x: '0'}
-  const inViewXFadeIn07 = { transition: { duration: 0.5, ease: 'easeInOut', delay: 0.7}, opacity: 1, x: '0'}
-  const inViewXFadeIn08 = { transition: { duration: 0.5, ease: 'easeInOut', delay: 0.8}, opacity: 1, x: '0'}
-  const inViewXFadeIn09 = { transition: { duration: 0.5, ease: 'easeInOut', delay: 0.9}, opacity: 1, x: '0'}
+  const inViewXFadeIn04 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 0.4}, opacity: 1, x: '0'}
+  const inViewXFadeIn05 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 0.5}, opacity: 1, x: '0'}
+  const inViewXFadeIn06 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 0.6}, opacity: 1, x: '0'}
+  const inViewXFadeIn07 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 0.7}, opacity: 1, x: '0'}
+  const inViewXFadeIn08 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 0.8}, opacity: 1, x: '0'}
   const inViewXFadeOut = { transition: { duration: 0.5, ease: 'easeInOut'}, opacity: 0, x: '-200px' }
- 
-  const inViewYFadeIn = { transition: { duration: 0.5, ease: 'easeInOut', delay: 0.3}, opacity: 1, y: '0'}
   const inViewYFadeOut = { transition: { duration: 0.5, ease: 'easeInOut'}, opacity: 0, y: '200px' }
-
+  const inViewYFadeIn04 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 0.4}, opacity: 1, y: '0'}
+  const inViewYFadeIn05 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 0.5}, opacity: 1, y: '0'}
+  const inViewYFadeIn06 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 0.6}, opacity: 1, y: '0'}
+  const inViewYFadeIn07 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 0.7}, opacity: 1, y: '0'}
+  const inViewYFadeIn08 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 0.8}, opacity: 1, y: '0'}
+  const inViewYFadeIn09 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 0.9}, opacity: 1, y: '0'}
+  const inViewYFadeIn10 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 1}, opacity: 1, y: '0'}
+  const inViewYFadeIn11 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 1.1}, opacity: 1, y: '0'}
 
 
   useEffect(() => {
@@ -53,38 +67,43 @@ export default function Home () {
       heroSubFade.start(inViewXFadeIn06)
       heroPFade.start(inViewXFadeIn07)
       heroButtonFade.start(inViewXFadeIn08)
-      heroImageFade.start(inViewXFadeIn09)
+      heroImageFade.start(inViewYFadeIn09)
     } 
-    if (!section1View) {
-      opacitySection1.start(inViewFadeOut);
-      headerFade.start(inViewFadeOut);
-    }
     if (section2View) {
       opacitySection2.start(inViewFadeIn);
+      p1FadeX.start(inViewXFadeIn04)
+      p2FadeX.start(inViewXFadeIn05)
+      listFadeX.start(inViewXFadeIn06)
+      p3FadeX.start(inViewXFadeIn07)
+      p4FadeX.start(inViewXFadeIn08)
+      imgFadeY.start(inViewYFadeIn09)
     } 
-    if (!section2View) {
-      opacitySection2.start(inViewFadeOut);
-    }
     if (section3View) {
       opacitySection3.start(inViewFadeIn);
+      t1.start(inViewYFadeIn04)
+      t2.start(inViewYFadeIn05)
+      t3.start(inViewYFadeIn06)
+      t4.start(inViewYFadeIn07)
+      t5.start(inViewYFadeIn08)
+      t6.start(inViewYFadeIn09)
+      t7.start(inViewYFadeIn10)
+      t8.start(inViewYFadeIn11)
     } 
-    if (!section3View) {
-      opacitySection3.start(inViewFadeOut);
-    }
     if (section4View) {
       opacitySection4.start(inViewFadeIn);
+      p1.start(inViewYFadeIn04);
+      p2.start(inViewYFadeIn05);
+      p3.start(inViewYFadeIn06);
+      p4.start(inViewYFadeIn07);
+      img1.start(inViewXFadeIn04)
+      img2.start(inViewXFadeIn05)
+      img3.start(inViewXFadeIn06)
+      img4.start(inViewXFadeIn07)
     } 
-    if (!section4View) {
-      opacitySection4.start(inViewFadeOut);
-    }
     if (section5View) {
       console.log('foi')
       opacitySection5.start(inViewFadeIn);
     } 
-    if (!section5View) {
-      console.log('não foi')
-      opacitySection5.start(inViewFadeOut);
-    }
   }, [section1View, section2View, section3View, section4View, section5View]);
   
   return (
@@ -112,34 +131,36 @@ export default function Home () {
 
       <main className="mt-[132px] md:mt-[252px] lg:mt-[152px] xl:mt-[198px] max-w-[358px] md:max-w-[628px] lg:max-w-[1283px] px-4 mx-auto">
         <HeroSection
-          inViewFadeOut={inViewFadeOut}
-          section1Ref={section1Ref}
-          opacitySection1={opacitySection1} 
-          heroHiFade={heroHiFade}
-          heroTitleFade={heroTitleFade}
-          heroSubFade={heroSubFade}
-          heroPFade={heroPFade}
-          heroButtonFade={heroButtonFade}
-          heroImageFade={heroImageFade}
+          section1Ref={section1Ref} 
+          inViewYFadeOut={inViewYFadeOut} inViewXFadeOut={inViewXFadeOut}
+          heroHiFade={heroHiFade} heroTitleFade={heroTitleFade}
+          heroSubFade={heroSubFade} heroPFade={heroPFade}
+          heroButtonFade={heroButtonFade} heroImageFade={heroImageFade}
         />
 
         <AboutSection 
+          section2Ref={section2Ref} 
+          p1FadeX={p1FadeX} p2FadeX={p2FadeX}
+          p3FadeX={p3FadeX} listFadeX={listFadeX} p4FadeX={p4FadeX} imgFadeY={imgFadeY}
+          inViewYFadeOut={inViewYFadeOut} inViewXFadeOut={inViewXFadeOut}
           inViewFadeOut={inViewFadeOut} 
           opacitySection2={opacitySection2} 
-          section2Ref={section2Ref} 
         />
 
         <TechnologiesSection
+          section3Ref={section3Ref}
+          t1={t1} t2={t2} t3={t3} t4={t4} t5={t5} t6={t6} t7={t7} t8={t8}
+          inViewYFadeOut={inViewYFadeOut}
           inViewFadeOut={inViewFadeOut}
           opacitySection3={opacitySection3}
-          section3Ref={section3Ref}
         />
 
-      <ProjectsSection
-        section4Ref={section4Ref}
-        inViewFadeOut={inViewFadeOut}
-        opacitySection4={opacitySection4} 
-      />
+        <ProjectsSection
+          section4Ref={section4Ref}
+          opacitySection4={opacitySection4} inViewFadeOut={inViewFadeOut}
+          p1={p1} p2={p2} p3={p3} p4={p4} img1={img1} img2={img2} img3={img3} img4={img4}
+          inViewXFadeOut={inViewXFadeOut} inViewYFadeOut={inViewYFadeOut}
+        />
 
         <motion.section className="mt-[398px] pb-56" ref={section5Ref} initial={inViewFadeOut} animate={opacitySection5}>
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">05. CONTACT</h2>

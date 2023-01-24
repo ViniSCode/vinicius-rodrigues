@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 
-export function TechnologiesSection({section3Ref, inViewFadeOut, opacitySection3}) {
+export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8, inViewYFadeOut, opacitySection3, inViewFadeOut}) {
   return (
     <motion.section
     className="mt-[398px]"
@@ -13,7 +13,7 @@ export function TechnologiesSection({section3Ref, inViewFadeOut, opacitySection3
       03. TECHNOLOGIES
     </h2>
     <div className="mt-[92px] md:mt-[152px] flex flex-col items-center md:flex-row md:flex-wrap md:justify-between md:items-center xl:gap-20">
-      <div className="max-w-[214px]">
+      <motion.div initial={inViewYFadeOut} animate={t1} className="max-w-[214px]">
         <div className="flex items-center justify-center">
           <img src="/assets/react.svg" alt="" className="" />
         </div>
@@ -30,9 +30,9 @@ export function TechnologiesSection({section3Ref, inViewFadeOut, opacitySection3
           <li>Props</li>
           <li>API</li>
         </ol>
-      </div>
+      </motion.div>
 
-      <div className="max-w-[214px] mt-8 md:mt-0">
+      <motion.div initial={inViewYFadeOut} animate={t2} className="max-w-[214px] mt-8 md:mt-0">
         <div className="flex items-center justify-center">
           <img src="/assets/next.svg" alt="" className="" />
         </div>
@@ -49,9 +49,9 @@ export function TechnologiesSection({section3Ref, inViewFadeOut, opacitySection3
           <li>Props</li>
           <li>API</li>
         </ol>
-      </div>
+      </motion.div>
 
-      <div className="max-w-[214px] mt-8">
+      <motion.div initial={inViewYFadeOut} animate={t3} className="max-w-[214px] mt-8">
         <div className="flex items-center justify-center">
           <img src="/assets/typescript.svg" alt="" className="" />
         </div>
@@ -68,9 +68,9 @@ export function TechnologiesSection({section3Ref, inViewFadeOut, opacitySection3
           <li>Props</li>
           <li>API</li>
         </ol>
-      </div>
+      </motion.div>
 
-      <div className="max-w-[214px] mt-8">
+      <motion.div initial={inViewYFadeOut} animate={t4} className="max-w-[214px] mt-8">
         <div className="flex items-center justify-center">
           <img src="/assets/graphql.svg" alt="" className="" />
         </div>
@@ -87,9 +87,9 @@ export function TechnologiesSection({section3Ref, inViewFadeOut, opacitySection3
           <li>Props</li>
           <li>API</li>
         </ol>
-      </div>
+      </motion.div>
 
-      <div className="max-w-[214px] mt-8">
+      <motion.div initial={inViewYFadeOut} animate={t5} className="max-w-[214px] mt-8">
         <div className="flex items-center justify-center">
           <img src="/assets/tailwind.svg" alt="" className="" />
         </div>
@@ -106,9 +106,9 @@ export function TechnologiesSection({section3Ref, inViewFadeOut, opacitySection3
           <li>Props</li>
           <li>API</li>
         </ol>
-      </div>
+      </motion.div>
 
-      <div className="max-w-[214px] mt-8">
+      <motion.div initial={inViewYFadeOut} animate={t6} className="max-w-[214px] mt-8">
         <div className="flex items-center justify-center">
           <img src="/assets/sass.svg" alt="" className="" />
         </div>
@@ -125,9 +125,9 @@ export function TechnologiesSection({section3Ref, inViewFadeOut, opacitySection3
           <li>Props</li>
           <li>API</li>
         </ol>
-      </div>
+      </motion.div>
 
-      <div className="max-w-[214px] mt-8">
+      <motion.div initial={inViewYFadeOut} animate={t7} className="max-w-[214px] mt-8">
         <div className="flex items-center justify-center">
           <img src="/assets/chakra.svg" alt="" className="" />
         </div>
@@ -144,9 +144,9 @@ export function TechnologiesSection({section3Ref, inViewFadeOut, opacitySection3
           <li>Props</li>
           <li>API</li>
         </ol>
-      </div>
+      </motion.div>
 
-      <div className="max-w-[214px] mt-8">
+      <motion.div initial={inViewYFadeOut} animate={t8} className="max-w-[214px] mt-8">
         <div className="flex items-center justify-center">
           <img src="/assets/css.svg" alt="" className="" />
         </div>
@@ -163,7 +163,7 @@ export function TechnologiesSection({section3Ref, inViewFadeOut, opacitySection3
           <li>Props</li>
           <li>API</li>
         </ol>
-      </div>
+      </motion.div>
     </div>
   </motion.section>
   )
