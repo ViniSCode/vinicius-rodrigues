@@ -12,7 +12,7 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
     <h2 className="text-center font-montserrat font-bold text-[28px] text-blue-gradient md:text-[40px]">
       03. TECHNOLOGIES
     </h2>
-    <div className="mt-[92px] md:mt-[152px] flex flex-col items-center md:flex-row md:flex-wrap md:justify-between md:items-center xl:gap-20">
+    <div className="mt-[92px] md:mt-[152px] flex flex-col items-center md:flex-row md:flex-wrap md:justify-between md:items-center xl:gap-20 lg:items-baseline xl:items-baseline">
       <motion.div initial={inViewYFadeOut} animate={t1} className="max-w-[214px]">
         <div className="flex items-center justify-center">
           <img src="/assets/react.svg" alt="" className="" />
@@ -26,9 +26,9 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
         <ol className="ml-4 mt-2 list-disc text-gray-600">
           <li>Context API</li>
           <li>Hooks</li>
-          <li>Stat</li>
+          <li>State</li>
           <li>Props</li>
-          <li>API</li>
+          <li>API's</li>
         </ol>
       </motion.div>
 
@@ -40,14 +40,12 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
           Next.JS
         </strong>
         <span className="mt-4 block text-gray-600">
-          Expert in React.js, creating professional projects.
+          Creating professional projects. 
         </span>
         <ol className="ml-4 mt-2 list-disc text-gray-600">
-          <li>Context API</li>
-          <li>Hooks</li>
-          <li>Stat</li>
-          <li>Props</li>
-          <li>API</li>
+          <li>Server-side rendering</li>
+          <li>Static Websites</li>
+          <li>Optimized performance</li>
         </ol>
       </motion.div>
 
@@ -59,14 +57,13 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
           Typescript
         </strong>
         <span className="mt-4 block text-gray-600">
-          Expert in React.js, creating professional projects.
+          Expert in creating projects using TypeScript to enhance the development process
         </span>
         <ol className="ml-4 mt-2 list-disc text-gray-600">
-          <li>Context API</li>
-          <li>Hooks</li>
-          <li>Stat</li>
-          <li>Props</li>
-          <li>API</li>
+          <li>Code maintainability</li>
+          <li>Productivity</li>
+          <li>Interfaces</li>
+          <li>Types</li>
         </ol>
       </motion.div>
 
@@ -78,14 +75,13 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
           GraphQl
         </strong>
         <span className="mt-4 block text-gray-600">
-          Expert in React.js, creating professional projects.
+          Experience using GraphQL.
         </span>
         <ol className="ml-4 mt-2 list-disc text-gray-600">
-          <li>Context API</li>
-          <li>Hooks</li>
-          <li>Stat</li>
-          <li>Props</li>
-          <li>API</li>
+          <li>Apollo Client</li>
+          <li>URQL</li>
+          <li>Mutations</li>
+          <li>Queries</li>
         </ol>
       </motion.div>
 
@@ -100,30 +96,29 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
           Expert in React.js, creating professional projects.
         </span>
         <ol className="ml-4 mt-2 list-disc text-gray-600">
-          <li>Context API</li>
-          <li>Hooks</li>
-          <li>Stat</li>
-          <li>Props</li>
-          <li>API</li>
+          <li>Rapid development</li>
+          <li>Responsive Websites</li>
+          <li>Consistent design</li>
+          <li>Productivity</li>
+          <li>Mobile First</li>
         </ol>
       </motion.div>
 
       <motion.div initial={inViewYFadeOut} animate={t6} className="max-w-[214px] mt-8">
         <div className="flex items-center justify-center">
-          <img src="/assets/sass.svg" alt="" className="" />
+          <img src="/assets/hygraph.svg" alt="" className="" />
         </div>
         <strong className="mt-6 text-white text-[28px] text-center block">
-          Sass
+          Headless CMS
         </strong>
         <span className="mt-4 block text-gray-600">
-          Expert in React.js, creating professional projects.
+          Expert in Creating solutions using Headless CMS.
         </span>
         <ol className="ml-4 mt-2 list-disc text-gray-600">
-          <li>Context API</li>
-          <li>Hooks</li>
-          <li>Stat</li>
-          <li>Props</li>
-          <li>API</li>
+          <li>Hygraph</li>
+          <li>Prismic CMS</li>
+          <li>Serverless</li>
+          <li>Database</li>
         </ol>
       </motion.div>
 
@@ -138,11 +133,11 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
           Expert in React.js, creating professional projects.
         </span>
         <ol className="ml-4 mt-2 list-disc text-gray-600">
-          <li>Context API</li>
-          <li>Hooks</li>
-          <li>Stat</li>
-          <li>Props</li>
-          <li>API</li>
+          <li>Customizable Components</li>
+          <li>Accessibility</li>
+          <li>Productivity</li>
+          <li>Theming</li>
+          <li>Styles</li>
         </ol>
       </motion.div>
 
