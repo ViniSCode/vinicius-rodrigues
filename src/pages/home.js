@@ -101,7 +101,7 @@ export default function Home () {
       img3.start(inViewXFadeIn04);
       img4.start(inViewXFadeIn04);
     } 
-    if (section5View) {
+    if (section5Ref) {
       opacitySection5.start(inViewFadeIn);
     } 
   }, [section1View, section2View, section3View, section4View, section5Ref]);
