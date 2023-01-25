@@ -108,7 +108,7 @@ export function ProjectsSection({
         </div>
 
         <div className="mt-[250px] flex items-center">
-          <a href="https://dopeshoe.vercel.app/" target="_blank" rel="noreferrer">
+          <a href="https://devblog-fe7e4.web.app/" target="_blank" rel="noreferrer">
             <motion.div  initial={inViewXFadeOut} animate={img3} whileHover={{scale: 1.03}} transition={{duration: 0.2}} className="w-[485px] xl:w-[668px] cursor-pointer">
               <img
                 src="/assets/devblog.png"
@@ -205,7 +205,7 @@ export function ProjectsSection({
         </h2>
         <div className="mt-[92px] md:mt-[152px] flex flex-col gap-28">
           <div>
-            <a href="https://dopeshoe.vercel.app/" rel="noreferrer" target="_blank">
+            <a href="https://githubstats-seven.vercel.app/" rel="noreferrer" target="_blank">
               <motion.img src="/assets/dopeshoe.png" alt="" className="shadow-sm" animate={img1} initial={inViewXFadeOut}  whileHover={{scale: 1.05}}/>
             </a>
             <motion.div animate={p1} initial={inViewYFadeOut}>
@@ -313,7 +313,7 @@ export function ProjectsSection({
           </div>
 
           <div>
-            <a href="https://dopeshoe.vercel.app/" rel="noreferrer" target="_blank">
+            <a href="https://monances.vercel.app/" rel="noreferrer" target="_blank">
               <motion.img src="/assets/monances.png" alt="" className="shadow-sm"  animate={img4} initial={inViewXFadeOut}  whileHover={{scale: 1.05}}/>
             </a>
             <motion.div animate={p4} initial={inViewYFadeOut}>

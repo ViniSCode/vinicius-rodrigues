@@ -11,7 +11,9 @@ export default function Home () {
   const {ref: section2Ref, inView: section2View } = useInView({ triggerOnce: true });
   const {ref: section3Ref, inView: section3View } = useInView({ triggerOnce: true });
   const {ref: section4Ref, inView: section4View } = useInView({ triggerOnce: true });
-  const {ref: section5Ref, inView: section5View } = useInView({ triggerOnce: true });
+  const {ref: section5Ref, inView: section5View } = useInView({ 
+    triggerOnce: true,
+  });
 
   // Section Opacity Animation
   const opacitySection1 = useAnimation(); const headerFade = useAnimation();
@@ -57,7 +59,6 @@ export default function Home () {
   const inViewYFadeIn10 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 1}, opacity: 1, y: '0'}
   const inViewYFadeIn11 = { transition: { duration: 0.7, ease: 'easeInOut', delay: 1.1}, opacity: 1, y: '0'}
 
-
   useEffect(() => {
     if (section1View) {
       opacitySection1.start(inViewFadeIn);
@@ -101,10 +102,9 @@ export default function Home () {
       img4.start(inViewXFadeIn04);
     } 
     if (section5View) {
-      console.log('foi')
       opacitySection5.start(inViewFadeIn);
     } 
-  }, [section1View, section2View, section3View, section4View, section5View]);
+  }, [section1View, section2View, section3View, section4View, section5Ref]);
   
   return (
     <motion.div className="container snap-start snap-mandatory scroll-smooth mx-auto"  animate={{opacity: 1}} initial={{opacity: 0}} transition={{delay: 0.1}}>
