@@ -55,7 +55,7 @@ body {
     display: flex; 
     align-items: center;
 
-    background: linear-gradient(111.86deg, rgba(0, 0, 0, 0.37) 0%, rgba(20, 26, 49, 0.32) 100%);
+    background: linear-gradient(111.86deg, rgba(5, 28, 43, 0.377) 0%, rgba(20, 26, 49, 0.32) 100%);
     box-shadow: 0px 0px 29px 1px rgba(74, 166, 247, 0.25);
     border: 2px solid #4AA6F7;
   }

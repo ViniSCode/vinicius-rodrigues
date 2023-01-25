@@ -23,7 +23,7 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
         <span className="mt-4 block text-gray-600 lg:text-sm xl:text-base">
           Expert in React.js, creating professional projects.
         </span>
-        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base">
+        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base marker:text-blue-400">
           <li>Context API</li>
           <li>JAM Stack</li>
           <li>Hooks</li>
@@ -42,7 +42,7 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
         <span className="mt-4 block text-gray-600 lg:text-sm xl:text-base">
           Creating fast, secure, and scalable web applications 
         </span>
-        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base">
+        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base marker:text-blue-400">
           <li>Server-side rendering</li>
           <li>Optimized performance</li>
           <li>Static Websites</li>
@@ -61,7 +61,7 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
         <span className="mt-4 block text-gray-600 lg:text-sm xl:text-base">
           TypeScript to Enhance the development process
         </span>
-        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base">
+        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base marker:text-blue-400">
           <li>Code maintainability</li>
           <li>Productivity</li>
           <li>Interfaces</li>
@@ -79,7 +79,7 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
         <span className="mt-4 block text-gray-600 lg:text-sm xl:text-base">
           Experience using GraphQL.
         </span>
-        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base">
+        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base marker:text-blue-400">
           <li>Apollo Client</li>
           <li>URQL</li>
           <li>Mutations</li>
@@ -97,7 +97,7 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
         <span className="mt-4 block text-gray-600 lg:text-sm xl:text-base">
           Expert in Creating solutions using Headless CMS.
         </span>
-        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base">
+        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base marker:text-blue-400">
           <li>Hygraph</li>
           <li>Prismic CMS</li>
           <li>Serverless</li>
@@ -115,7 +115,7 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
         <span className="mt-4 block text-gray-600 lg:text-sm xl:text-base">
           Expert in React.js, creating professional projects.
         </span>
-        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base">
+        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base marker:text-blue-400">
           <li>Rapid development</li>
           <li>Responsive Websites</li>
           <li>Consistent design</li>
@@ -134,7 +134,7 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
         <span className="mt-4 block text-gray-600 lg:text-sm xl:text-base">
           Expert in React.js, creating professional projects.
         </span>
-        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base">
+        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base marker:text-blue-400">
           <li>Customizable Components</li>
           <li>Accessibility</li>
           <li>Productivity</li>
@@ -153,7 +153,7 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
         <span className="mt-4 block text-gray-600">
           Skilled in stylizing websites using CSS 
         </span>
-        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base">
+        <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base marker:text-blue-400">
           <li>Responsive Websites</li>
           <li>Mobile/Desktop First</li>
           <li>Flexbox Layout</li>

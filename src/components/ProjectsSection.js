@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { BsFillCircleFill } from 'react-icons/bs';
 
 export function ProjectsSection({
   section4Ref,
@@ -44,7 +45,8 @@ export function ProjectsSection({
               </p>
             </div>
 
-            <span className="text-gray-600 font-medium text-base mt-6 text-end block">
+            <span className="text-gray-500 font-medium text-base mt-6 flex items-center gap-2 justify-end">
+              <BsFillCircleFill size={8} className="text-blue-400" />
               NextJS, Stripe, Hygraph, Graphql(URQL), Typescript, Tailwindcss.
             </span>
 
@@ -90,7 +92,8 @@ export function ProjectsSection({
               </p>
             </div>
 
-            <span className="text-gray-600 font-medium text-base mt-6 text-end block">
+            <span className="text-gray-500 font-medium text-base mt-6 flex items-center gap-2 justify-end">
+              <BsFillCircleFill size={8} className="text-blue-400" />
               NextJS, Typescript, Chakra UI, GraphQL(Apollo Client), Codegen.
             </span>
 
@@ -136,7 +139,8 @@ export function ProjectsSection({
               </p>
             </div>
 
-            <span className="text-gray-600 font-medium text-base mt-6 text-end block">
+            <span className="text-gray-500 font-medium text-base mt-6 flex items-center gap-2 justify-end">
+              <BsFillCircleFill size={8} className="text-blue-400" />
               ReactJS, Firebase, Prismic CMS, Sass.
             </span>
 
@@ -180,7 +184,8 @@ export function ProjectsSection({
               </p>
             </div>
 
-            <span className="text-gray-600 font-medium text-base mt-6 text-end block">
+            <span className="text-gray-500 font-medium text-base mt-6 flex items-center gap-2 justify-end">
+              <BsFillCircleFill size={8} className="text-blue-400" />
               Html, Css, Javascript, ChartJS, sweetalert2, scrollrevealjs.
             </span>
 
@@ -228,7 +233,8 @@ export function ProjectsSection({
                 orders. It includes features like responsive layout and search bar
                 with filters.
               </p>
-              <div className="mt-4 md:mt-6">
+              <div className="mt-4 md:mt-6 flex items-center gap-2">
+                <BsFillCircleFill size={8} className="text-blue-400" />
                 <span className="text-sm text-gray-600 font-medium md:text-base">
                   NextJS, Stripe, Hygraph, Graphql(URQL), Typescript, Tailwindcss.
                 </span>
@@ -266,7 +272,8 @@ export function ProjectsSection({
                 organization. It is designed to provide a simple and efficient way
                 to view a user's Github data.
               </p>
-              <div className="mt-4 md:mt-6">
+              <div className="mt-4 md:mt-6 flex items-center gap-2">
+                <BsFillCircleFill size={8} className="text-blue-400" />
                 <span className="text-sm text-gray-600 font-medium md:text-base">
                   NextJS, Typescript, Chakra UI, GraphQL(Apollo Client), Codegen.
                 </span>
@@ -304,7 +311,8 @@ export function ProjectsSection({
                 platform. Additionally, the application provides user
                 authentication capabilities through Firebase Auth.
               </p>
-              <div className="mt-4 md:mt-6">
+              <div className="mt-4 md:mt-6 flex items-center gap-2">
+                <BsFillCircleFill size={8} className="text-blue-400" />
                 <span className="text-sm text-gray-600 font-medium md:text-base">
                   ReactJS, Firebase, Prismic CMS, Sass.
                 </span>
@@ -340,7 +348,8 @@ export function ProjectsSection({
                 view your balance with an interactive chart, and switch to dark
                 mode for comfortable use.
               </p>
-              <div className="mt-4 md:mt-6">
+              <div className="mt-4 md:mt-6 flex items-center gap-2">
+                <BsFillCircleFill size={8} className="text-blue-400" />
                 <span className="text-sm text-gray-600 font-medium md:text-base">
                   Html, Css, Javascript, ChartJS, sweetalert2, scrollrevealjs.
                 </span>
