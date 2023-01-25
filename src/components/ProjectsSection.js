@@ -54,12 +54,13 @@ export function ProjectsSection({
                 alt=""
                 className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
               />
-              <a href="https://dopeshoe.vercel.app/" target="_blank" rel="noreferrer"></a>
-              <img
-                src="/assets/link.svg"
-                alt=""
-                className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
-              />
+              <a href="https://dopeshoe.vercel.app/" target="_blank" rel="noreferrer">
+                <img
+                  src="/assets/link.svg"
+                  alt=""
+                  className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
+                />
+              </a>
             </div>
           </motion.div>
         </div>
@@ -250,7 +251,7 @@ export function ProjectsSection({
           </div>
 
           <div>
-            <a href="">
+            <a href="https://githubstats-seven.vercel.app/" rel="noreferrer" target="_blank">
               <motion.img src="/assets/githubstats.png" alt="" className="shadow-sm"  animate={img2} initial={inViewXFadeOut}  whileHover={{scale: 1.05}}/>
             </a>
             <motion.div animate={p2} initial={inViewYFadeOut}>
