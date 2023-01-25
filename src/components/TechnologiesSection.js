@@ -151,14 +151,14 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
           CSS3
         </strong>
         <span className="mt-4 block text-gray-600">
-          Expert in React.js, creating professional projects.
+          Skilled in stylizing websites using CSS 
         </span>
         <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base">
-          <li>Context API</li>
-          <li>Hooks</li>
-          <li>Stat</li>
-          <li>Props</li>
-          <li>API</li>
+          <li>Responsive Websites</li>
+          <li>Mobile/Desktop First</li>
+          <li>Flexbox Layout</li>
+          <li>Grid Layout</li>
+          <li>Animations</li>
         </ol>
       </motion.div>
     </div>
