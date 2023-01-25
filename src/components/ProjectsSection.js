@@ -54,6 +54,7 @@ export function ProjectsSection({
                 alt=""
                 className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
               />
+              <a href="https://dopeshoe.vercel.app/" target="_blank" rel="noreferrer"></a>
               <img
                 src="/assets/link.svg"
                 alt=""
@@ -64,7 +65,7 @@ export function ProjectsSection({
         </div>
 
         <div className="mt-[250px] flex items-center">
-          <a href="https://dopeshoe.vercel.app/" target="_blank" rel="noreferrer">
+          <a href="https://githubstats-seven.vercel.app/" target="_blank" rel="noreferrer">
             <motion.div  initial={inViewXFadeOut} animate={img2} whileHover={{scale: 1.03}} transition={{duration: 0.2}} className="w-[485px] xl:w-[668px] cursor-pointer">
               <img
                 src="/assets/githubstats.png"
@@ -98,11 +99,13 @@ export function ProjectsSection({
                 alt=""
                 className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
               />
-              <img
-                src="/assets/link.svg"
-                alt=""
-                className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
-              />
+              <a href="https://githubstats-seven.vercel.app/" target="_blank" rel="noreferrer">
+                <img
+                  src="/assets/link.svg"
+                  alt=""
+                  className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
+                />
+              </a>
             </div>
           </motion.div>
         </div>
@@ -142,17 +145,19 @@ export function ProjectsSection({
                 alt=""
                 className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
               />
-              <img
-                src="/assets/link.svg"
-                alt=""
-                className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
-              />
+              <a href="https://devblog-fe7e4.web.app/" target="_blank" rel="noreferrer">
+                <img
+                  src="/assets/link.svg"
+                  alt=""
+                  className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
+                />
+              </a>
             </div>
           </motion.div>
         </div>
 
         <div className="mt-[250px] flex items-center">
-          <a href="https://dopeshoe.vercel.app/" target="_blank" rel="noreferrer">
+          <a href="https://monances.vercel.app/" target="_blank" rel="noreferrer">
             <motion.div  initial={inViewXFadeOut} animate={img4} whileHover={{scale: 1.03}} transition={{duration: 0.2}} className="w-[485px] xl:w-[668px] cursor-pointer">
               <img
                 src="/assets/monances.png"
@@ -184,11 +189,13 @@ export function ProjectsSection({
                 alt=""
                 className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
               />
-              <img
-                src="/assets/link.svg"
-                alt=""
-                className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
-              />
+              <a href="https://monances.vercel.app/" target="_blank" rel="noreferrer">
+                <img
+                  src="/assets/link.svg"
+                  alt=""
+                  className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
+                />
+              </a>
             </div>
           </motion.div>
         </div>
@@ -231,11 +238,13 @@ export function ProjectsSection({
                   alt=""
                   className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
                 />
-                <img
-                  src="/assets/link.svg"
-                  alt=""
-                  className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
-                />
+                <a href="https://dopeshoe.vercel.app/" rel="noreferrer" target="_blank">
+                  <img
+                    src="/assets/link.svg"
+                    alt=""
+                    className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
+                  />
+                </a>
               </div>
             </motion.div>
           </div>
@@ -267,17 +276,19 @@ export function ProjectsSection({
                   alt=""
                   className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
                 />
-                <img
-                  src="/assets/link.svg"
-                  alt=""
-                  className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
-                />
+                <a href="https://githubstats-seven.vercel.app/" rel="noreferrer" target="_blank">
+                  <img
+                    src="/assets/link.svg"
+                    alt=""
+                    className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
+                  />
+                </a>
               </div>
             </motion.div>
           </div>
 
           <div>
-            <a href="https://dopeshoe.vercel.app/" rel="noreferrer" target="_blank">
+            <a href="https://devblog-fe7e4.web.app/" rel="noreferrer" target="_blank">
               <motion.img src="/assets/devblog.png" alt="" className="shadow-sm"  animate={img3} initial={inViewXFadeOut}  whileHover={{scale: 1.05}}/>
             </a>
             <motion.div animate={p3} initial={inViewYFadeOut}>
@@ -303,11 +314,13 @@ export function ProjectsSection({
                   alt=""
                   className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
                 />
-                <img
-                  src="/assets/link.svg"
-                  alt=""
-                  className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
-                />
+                <a href="https://devblog-fe7e4.web.app/" target="_blank" rel="noreferrer">
+                  <img
+                    src="/assets/link.svg"
+                    alt=""
+                    className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
+                  />
+                </a>
               </div>
             </motion.div>
           </div>
@@ -337,11 +350,13 @@ export function ProjectsSection({
                   alt=""
                   className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
                 />
-                <img
-                  src="/assets/link.svg"
-                  alt=""
-                  className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
-                />
+                <a href="https://monances.vercel.app/" target="_blank" rel="noreferrer">
+                  <img
+                    src="/assets/link.svg"
+                    alt=""
+                    className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
+                  />
+                </a>
               </div>
             </motion.div>
           </div>
