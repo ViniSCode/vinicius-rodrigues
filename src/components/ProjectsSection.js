@@ -51,11 +51,13 @@ export function ProjectsSection({
             </span>
 
             <div className="flex items-center justify-end gap-4 mt-4">
+            <a href="https://www.github.com/viniscode/dopeshoe/" target="_blank" rel="noreferrer">
               <img
                 src="/assets/github.svg"
                 alt=""
                 className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
               />
+            </a>
               <a href="https://dopeshoe.vercel.app/" target="_blank" rel="noreferrer">
                 <img
                   src="/assets/link.svg"
@@ -98,11 +100,13 @@ export function ProjectsSection({
             </span>
 
             <div className="flex items-center justify-end gap-4 mt-4">
-              <img
-                src="/assets/github.svg"
-                alt=""
-                className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
-              />
+              <a href="https://www.github.com/viniscode/githubstats/" target="_blank" rel="noreferrer">
+                <img
+                  src="/assets/github.svg"
+                  alt=""
+                  className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
+                />
+              </a>
               <a href="https://githubstats-seven.vercel.app/" target="_blank" rel="noreferrer">
                 <img
                   src="/assets/link.svg"
@@ -145,11 +149,13 @@ export function ProjectsSection({
             </span>
 
             <div className="flex items-center justify-end gap-4 mt-4">
-              <img
-                src="/assets/github.svg"
-                alt=""
-                className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
-              />
+              <a href="https://www.github.com/viniscode/devblog/" target="_blank" rel="noreferrer">
+                <img
+                  src="/assets/github.svg"
+                  alt=""
+                  className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
+                />
+              </a>
               <a href="https://devblog-fe7e4.web.app/" target="_blank" rel="noreferrer">
                 <img
                   src="/assets/link.svg"
@@ -190,11 +196,13 @@ export function ProjectsSection({
             </span>
 
             <div className="flex items-center justify-end gap-4 mt-4">
-              <img
-                src="/assets/github.svg"
-                alt=""
-                className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
-              />
+              <a href="https://www.github.com/viniscode/monances/" target="_blank" rel="noreferrer">
+                <img
+                  src="/assets/github.svg"
+                  alt=""
+                  className="cursor-pointer w-[25px] transition-filter hover:brightness-150"
+                />
+              </a>
               <a href="https://monances.vercel.app/" target="_blank" rel="noreferrer">
                 <img
                   src="/assets/link.svg"
@@ -240,11 +248,13 @@ export function ProjectsSection({
                 </span>
               </div>
               <div className="flex items-center gap-4 mt-4 md:mt-6">
-                <img
-                  src="/assets/github.svg"
-                  alt=""
-                  className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
-                />
+                <a href="https://www.github.com/viniscode/dopeshoe/" target="_blank" rel="noreferrer">
+                  <img
+                    src="/assets/github.svg"
+                    alt=""
+                    className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
+                  />
+                </a>
                 <a href="https://dopeshoe.vercel.app/" rel="noreferrer" target="_blank">
                   <img
                     src="/assets/link.svg"
@@ -279,11 +289,14 @@ export function ProjectsSection({
                 </span>
               </div>
               <div className="flex items-center gap-4 mt-4 md:mt-6">
-                <img
-                  src="/assets/github.svg"
-                  alt=""
-                  className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
-                />
+                <a href="https://www.github.com/viniscode/githubstats/" target="_blank" rel="noreferrer">
+                  <img
+                    src="/assets/github.svg"
+                    alt=""
+                    className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
+                  />
+                </a>
+
                 <a href="https://githubstats-seven.vercel.app/" rel="noreferrer" target="_blank">
                   <img
                     src="/assets/link.svg"
@@ -318,11 +331,14 @@ export function ProjectsSection({
                 </span>
               </div>
               <div className="flex items-center gap-4 mt-4 md:mt-6">
-                <img
-                  src="/assets/github.svg"
-                  alt=""
-                  className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
-                />
+                <a href="https://www.github.com/viniscode/devblog/" target="_blank" rel="noreferrer">
+                  <img
+                    src="/assets/github.svg"
+                    alt=""
+                    className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
+                  />
+                </a>
+
                 <a href="https://devblog-fe7e4.web.app/" target="_blank" rel="noreferrer">
                   <img
                     src="/assets/link.svg"
@@ -355,11 +371,14 @@ export function ProjectsSection({
                 </span>
               </div>
               <div className="flex items-center gap-4 mt-4 md:mt-6">
-                <img
-                  src="/assets/github.svg"
-                  alt=""
-                  className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
-                />
+                <a href="https://www.github.com/viniscode/monances/" target="_blank" rel="noreferrer">
+                  <img
+                    src="/assets/github.svg"
+                    alt=""
+                    className="cursor-pointer md:w-[35px] transition-filter hover:brightness-150"
+                  />
+                </a>
+
                 <a href="https://monances.vercel.app/" target="_blank" rel="noreferrer">
                   <img
                     src="/assets/link.svg"
