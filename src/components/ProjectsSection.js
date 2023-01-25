@@ -10,10 +10,10 @@ export function ProjectsSection({
 }) {
   return (
     <motion.div
+      id="projects-section" 
       ref={section4Ref}
       initial={inViewFadeOut}
       animate={opacitySection4}
-      id="#projects"
     >
       <motion.section className="mt-[398px] hidden lg:block relative">
         <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">

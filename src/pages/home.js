@@ -106,12 +106,50 @@ export default function Home () {
     } 
   }, [section1View, section2View, section3View, section4View, section5Ref]);
   
+  
+  const scrollToHome = () => {
+    const element = document.getElementById('home-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  const scrollToAbout = () => {
+    const element = document.getElementById('about-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  const scrollToTechnologies = () => {
+    const element = document.getElementById('technologies-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  const scrollToProjects = () => {
+    const element = document.getElementById('projects-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  const scrollToContact = () => {
+    const element = document.getElementById('contact-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+
   return (
-    <motion.div className="container snap-start snap-mandatory scroll-smooth mx-auto"  animate={{opacity: 1}} initial={{opacity: 0}} transition={{delay: 0.1}}>
+    <motion.div id='home-section' className="container snap-start snap-mandatory scroll-smooth mx-auto"  animate={{opacity: 1}} initial={{opacity: 0}} transition={{delay: 0.1}}>
       <div className="lg:hidden menu-bg-blue-gradient fixed top-0 left-0 right-0 shadow-sm z-[20]">
         <header  className="pt-[22px] pb-[22px] w-full max-w-[358px] md:max-w-[628px] px-4 mx-auto">
           <nav className="flex items-center justify-between">
             <motion.span  className="font-montserrat font-bold text-sm leading-[17px] tracking-[-0.02em] text-blue-gradient">VINÍCIUS RODRIGUES</motion.span>
+            {/* <Sidebar /> */}
             <img src="/assets/menu.svg" alt="" />
           </nav>
         </header>
@@ -120,11 +158,11 @@ export default function Home () {
         <nav className='flex items-center justify-between'>
           <span className="text-blue-gradient font-bold leading-5 tracking-[-0.02em] lg:text-xs xl:text-sm">VINÍCIUS RODRIGUES</span>
           <ul className='flex items-center gap-8 font-montserrat font-bold leading-5 tracking-[-0.02em] lg:text-xs xl:text-sm'>      
-            <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>01.HOME</a></li>
-            <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>02.ABOUT</a></li>
-            <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>03.TECHNOLOGIES</a></li>
-            <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>03.PROJECTS</a></li>
-            <li><a href='/' className='text-blue-gradient transition-filter hover:brightness-150'>04.CONTACT</a></li>
+            <li><span href='#' onClick={scrollToHome} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>01.HOME</span></li>
+            <li><span href='#' onClick={scrollToAbout} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>02.ABOUT</span></li>
+            <li><span href='#' onClick={scrollToTechnologies} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>03.TECHNOLOGIES</span></li>
+            <li><span href='#' onClick={scrollToProjects} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>03.PROJECTS</span></li>
+            <li><span href='#' onClick={scrollToContact} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>04.CONTACT</span></li>
           </ul>
         </nav>
       </div>
@@ -162,7 +200,7 @@ export default function Home () {
           inViewXFadeOut={inViewXFadeOut} inViewYFadeOut={inViewYFadeOut}
         />
 
-        <motion.section className="mt-[398px] pb-56" ref={section5Ref} initial={inViewFadeOut} animate={opacitySection5}>
+        <motion.section id="contact-section" className="mt-[398px] pb-56" ref={section5Ref} initial={inViewFadeOut} animate={opacitySection5}>
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">05. CONTACT</h2>
           <div className='mt-[92px] md:mt-[152px]'>
             <h3 className="text-center font-montserrat font-bold text-[23px] text-blue-gradient">Get in touch</h3>

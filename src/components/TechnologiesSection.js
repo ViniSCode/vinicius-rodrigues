@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8, inViewYFadeOut, opacitySection3, inViewFadeOut}) {
   return (
     <motion.section
+    id="technologies-section" 
     className="mt-[398px]"
     ref={section3Ref}
     initial={inViewFadeOut}

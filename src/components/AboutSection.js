@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export function AboutSection({ section2Ref, p1FadeX, p2FadeX, p3FadeX, listFadeX, p4FadeX, imgFadeY, inViewYFadeOut, inViewXFadeOut, inViewFadeOut, opacitySection2}) {
   return (
-    <motion.section className="mt-[398px]" ref={section2Ref} animate={opacitySection2} initial={inViewFadeOut}>
+    <motion.section  id="about-section" className="mt-[398px]" ref={section2Ref} animate={opacitySection2} initial={inViewFadeOut}>
       <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">
         02. About
       </h2>
