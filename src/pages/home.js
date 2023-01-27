@@ -158,11 +158,11 @@ export default function Home () {
         <nav className='flex items-center justify-between'>
           <span className="text-blue-gradient font-bold leading-5 tracking-[-0.02em] lg:text-xs xl:text-sm">VINÍCIUS RODRIGUES</span>
           <ul className='flex items-center gap-8 font-montserrat font-bold leading-5 tracking-[-0.02em] lg:text-xs xl:text-sm'>      
-            <li><span href='#' onClick={scrollToHome} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>01.HOME</span></li>
-            <li><span href='#' onClick={scrollToAbout} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>02.ABOUT</span></li>
-            <li><span href='#' onClick={scrollToTechnologies} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>03.TECHNOLOGIES</span></li>
-            <li><span href='#' onClick={scrollToProjects} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>03.PROJECTS</span></li>
-            <li><span href='#' onClick={scrollToContact} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>04.CONTACT</span></li>
+            <li><button onClick={scrollToHome} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>01.HOME</button></li>
+            <li><button onClick={scrollToAbout} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>02.ABOUT</button></li>
+            <li><button onClick={scrollToTechnologies} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>03.TECHNOLOGIES</button></li>
+            <li><button onClick={scrollToProjects} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>03.PROJECTS</button></li>
+            <li><button onClick={scrollToContact} className='text-blue-gradient transition-filter hover:brightness-150 cursor-pointer'>04.CONTACT</button></li>
           </ul>
         </nav>
       </div>

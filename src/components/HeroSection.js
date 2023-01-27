@@ -2,6 +2,14 @@ import { motion } from 'framer-motion';
 import React from 'react';
 
 export function HeroSection ({section1Ref, heroHiFade, heroTitleFade, heroSubFade, heroPFade, heroButtonFade, heroImageFade, inViewYFadeOut, inViewXFadeOut}) {
+  
+  const scrollToProjects = () => {
+    const element = document.getElementById('projects-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  
   return (
     <motion.section className="text-white lg:flex items-center justify-between" ref={section1Ref}>
       <div className='lg:max-w-[600px] xl:max-w-[782px]'>
@@ -15,7 +23,7 @@ export function HeroSection ({section1Ref, heroHiFade, heroTitleFade, heroSubFad
           Currently, I am focused on <span className="text-blue-500">Next.js</span> and using my expertise to build 
           intuitive, effective code solutions.
         </motion.p>
-        <motion.button initial={inViewXFadeOut} animate={heroButtonFade} className="button-properties py-3 px-4 lg:py-4 lg:px-6 mt-[78px] transition-colors hover:bg-blue-300 hover:text-blue-500 lg:mt-[72px]">
+        <motion.button onClick={scrollToProjects}  initial={inViewXFadeOut} animate={heroButtonFade} className="button-properties py-3 px-4 lg:py-4 lg:px-6 mt-[78px] transition-colors hover:bg-blue-300 hover:text-blue-500 lg:mt-[72px]">
           Check out my projects
         </motion.button>
       </div>
