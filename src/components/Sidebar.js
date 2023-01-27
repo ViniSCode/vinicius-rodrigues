@@ -64,22 +64,49 @@ export function Sidebar() {
       }
     }
   };
+  const menu = {
+    open: {
+      x: '0%',
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        stiffness: 300,
+        damping: 20
+      }
+    },
+    closed: {
+      x: '100%',
+      opacity: 0,
+      transition: {
+        type: 'spring',
+        stiffness: 300,
+        damping: 20
+      }
+    }
+  };
 
   return (
     <>
-    <div className="mx-auto  max-w-[358px] md:max-w-[628px] right-0">
+    <motion.div className={`mx-auto cursor-pointer  max-w-[358px] md:max-w-[628px] absolute -top-[8px] right-0 z-40`} animate={isOpen ? 'closed' : 'open'} variants={menu}>
       <img src="/assets/menu.svg"
-        className="absolute top-4 right-56 z-40 block"
-        onClick={() => setIsOpen(!isOpen)}
+        className="block"
+        onClick={() => setIsOpen(true)}
+        animate={isOpen ? 'open' : 'closed'}
       />
-    </div>
+    </motion.div>
+    <motion.div className="mx-auto cursor-pointer max-w-[358px] md:max-w-[628px] absolute -top-[8px] right-0 z-40" animate={!isOpen ? 'closed' : 'open'} variants={menu}>
+      <img src="/assets/close.svg"
+        className="block"
+        onClick={() => setIsOpen(false)}
+      />
+    </motion.div>
       <motion.nav
         className="sidebar flex items-center justify-center"
         variants={sidebarVariants}
         initial="closed"
         animate={isOpen ? 'open' : 'closed'}
       >
-        <ul className="sidebar__nav flex flex-col items-center gap-20">
+        <ul className="sidebar__nav flex flex-col items-center gap-10">
             <li><span href='#' onClick={scrollToHome} className='text-blue-gradient transition-filter hover:brightness-150 font-bold cursor-pointer'>01.HOME</span></li>
             <li><span href='#' onClick={scrollToAbout} className='text-blue-gradient transition-filter hover:brightness-150 font-bold cursor-pointer'>02.ABOUT</span></li>
             <li><span href='#' onClick={scrollToTechnologies} className='text-blue-gradient transition-filter hover:brightness-150 font-bold cursor-pointer'>03.TECHNOLOGIES</span></li>

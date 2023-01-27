@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { AboutSection } from '../components/AboutSection';
 import { HeroSection } from '../components/HeroSection';
 import { ProjectsSection } from '../components/ProjectsSection';
+import { Sidebar } from '../components/Sidebar';
 import { TechnologiesSection } from '../components/TechnologiesSection';
 
 export default function Home () {
@@ -147,10 +148,10 @@ export default function Home () {
     <motion.div id='home-section' className="container snap-start snap-mandatory scroll-smooth mx-auto"  animate={{opacity: 1}} initial={{opacity: 0}} transition={{delay: 0.1}}>
       <div className="lg:hidden menu-bg-blue-gradient fixed top-0 left-0 right-0 shadow-sm z-[20]">
         <header  className="pt-[22px] pb-[22px] w-full max-w-[358px] md:max-w-[628px] px-4 mx-auto">
-          <nav className="flex items-center justify-between">
+          <nav className="flex items-center justify-between relative">
             <motion.span  className="font-montserrat font-bold text-sm leading-[17px] tracking-[-0.02em] text-blue-gradient">VINÍCIUS RODRIGUES</motion.span>
-            {/* <Sidebar /> */}
-            <img src="/assets/menu.svg" alt="" />
+            <Sidebar />
+            {/* <img src="/assets/menu.svg" alt="" /> */}
           </nav>
         </header>
       </div>
