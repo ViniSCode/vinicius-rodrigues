@@ -151,7 +151,6 @@ export default function Home () {
           <nav className="flex items-center justify-between relative">
             <motion.span  className="font-montserrat font-bold text-sm leading-[17px] tracking-[-0.02em] text-blue-gradient">VINÍCIUS RODRIGUES</motion.span>
             <Sidebar />
-            {/* <img src="/assets/menu.svg" alt="" /> */}
           </nav>
         </header>
       </div>
@@ -207,9 +206,12 @@ export default function Home () {
             <h3 className="text-center font-montserrat font-bold text-[23px] text-blue-gradient">Get in touch</h3>
             <div className="mt-7 w-[200px] bg-blue-gradient h-[1px] mx-auto"></div>
             <div className="flex gap-7 justify-center mt-14">
-              <img  src="/assets/github.svg" alt="" className="w-[33px] cursor-pointer"/>
-              <img  src="/assets/mail.svg" alt=""  className="cursor-pointer"/>
-              <img  src="/assets/linkedin.svg" alt=""  className="cursor-pointer"/>
+              <a href="https://www.github.com/viniscode/" rel="noreferrer" target="_blank"><img  src="/assets/github.svg" alt="" className="w-[33px] cursor-pointer"/></a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=viniciuskauarodriguesdev@gmail.com" rel="noreferrer" target="_blank"><img  src="/assets/mail.svg" alt=""  className="cursor-pointer"/></a>
+              <a href="https://www.linkedin.com/in/vinicius-rodrigues-5897831b8/" rel="noreferrer" target="_blank"><img  src="/assets/linkedin.svg" alt=""  className="cursor-pointer"/></a>
+              
+              
+              
             </div>
             <div className="mt-20 flex justify-center">
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jairrodriguesmd@gmail.com" rel="noreferrer" target="_blank" className="cursor-pointer button-properties py-3 px-16 mt-[78px] transition-colors hover:bg-blue-300 hover:text-blue-500">
