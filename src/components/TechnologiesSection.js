@@ -114,7 +114,7 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
           Tailwind
         </strong>
         <span className="mt-4 block text-gray-600 lg:text-sm xl:text-base">
-          Expert in React.js, creating professional projects.
+          Elevating UI Design with Tailwind CSS
         </span>
         <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base marker:text-blue-400">
           <li>Rapid development</li>
@@ -133,7 +133,7 @@ export function TechnologiesSection({section3Ref, t1, t2, t3, t4, t5, t6, t7, t8
           Chakra UI
         </strong>
         <span className="mt-4 block text-gray-600 lg:text-sm xl:text-base">
-          Expert in React.js, creating professional projects.
+          Elegant and User-Friendly Websites with Chakra UI
         </span>
         <ol className="ml-4 mt-2 list-disc text-gray-600 lg:text-sm xl:text-base marker:text-blue-400">
           <li>Customizable Components</li>
