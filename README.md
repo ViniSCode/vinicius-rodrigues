@@ -1,7 +1,8 @@
 # Welcome to my Portfolio
-I am excited to share my recently completed portfolio website with you. Although I am not a professional designer, I took on the challenge of creating the UI design from scratch. I drew inspiration from various sources to create a visually appealing and unique design.
+![enter image description here](https://github.com/ViniSCode/vinicius-rodrigues/blob/main/public/assets/portfolio_preview.png?raw=true)
+### Portfolio Preview: https://viniciusrodrigues.vercel.app/
 
-Portfolio Preview: https://viniciusrodrigues.vercel.app/
+I am excited to share my recently completed portfolio website with you. Although I am not a professional designer, I took on the challenge of creating the UI design from scratch. I drew inspiration from various sources to create a visually appealing and unique design.
 
 ## The portfolio was built using the following technologies:
 - React.js
