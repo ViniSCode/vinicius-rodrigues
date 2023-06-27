@@ -1,70 +1,111 @@
 import { motion } from "framer-motion";
-
-export function AboutSection({ section2Ref, p1FadeX, p2FadeX, p3FadeX, listFadeX, p4FadeX, imgFadeY, inViewYFadeOut, inViewXFadeOut, inViewFadeOut, opacitySection2}) {
+export function AboutSection({
+  section2Ref,
+  p1FadeX,
+  p2FadeX,
+  p3FadeX,
+  listFadeX,
+  p4FadeX,
+  imgFadeY,
+  inViewYFadeOut,
+  inViewXFadeOut,
+  inViewFadeOut,
+  opacitySection2,
+}) {
   return (
-    <motion.section  id="about-section" className="mt-[398px]" ref={section2Ref} animate={opacitySection2} initial={inViewFadeOut}>
+    <motion.section
+      id="about-section"
+      className="mt-[398px]"
+      ref={section2Ref}
+      animate={opacitySection2}
+      initial={inViewFadeOut}
+    >
       <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">
         02. About
       </h2>
-      <div className="lg:flex lg:gap-16 lg:items-center xl:items-center">
+      <div className="mt-[92px] flex flex-col gap-14 lg:flex lg:flex-row lg:gap-16 lg:items-center xl:items-center bg-blue-890 border-4 border-blue-850 rounded-2xl md:rounded-3xl lg:rounded-[30px] p-8 md:p-16">
+        <div className="flex justify-center w-full md:w-[300px] lg:min-w-[300px] xl:min-w-[400px]  mx-auto">
+          <motion.img
+            animate={imgFadeY}
+            initial={inViewYFadeOut}
+            src="/assets/avatar.png"
+            alt="Vinícius Rodrigues"
+            className="block w-full"
+          />
+        </div>
         <div className="lg:max-w-[600px] xl:max-w-[792px]">
-          <motion.p animate={p1FadeX} initial={inViewXFadeOut} className="mt-[92px] md:mt-[152px] font-montserrat text-sm text-white leading-[20px] xl:text-base xl:leading-[28px]">
-            Hi there! My name is Vinícius and I am passionate about creating
-            engaging web experiences. I have a background in System Analysis and
-            Development and have been studying Front End Development for the
-            past two years. My technical skills include technologies such as{" "}
+          <h3 className="text-xl md:text-2xl uppercase text-start font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">
+            Vinícius Rodrigues
+          </h3>
+          <motion.p
+            animate={p1FadeX}
+            initial={inViewXFadeOut}
+            className="mt-8 md:mt-10 font-montserrat text-xs text-gray-text  font-medium leading-[20px] xl:text-base xl:leading-[28px]"
+          >
+            Hi there! My name is Vinícius and I am{" "}
+            <span className="text-blue-500">
+              passionate about creating engaging web experiences
+            </span>
+            . I have a background in{" "}
+            <span className="text-blue-500">
+              System Analysis and Development
+            </span>{" "}
+            and have been studying Front End Development for the past two years.
+            My technical skills include technologies such as{" "}
             <span className="text-blue-500">
               React, Next.JS, and Typescript
             </span>
             .
           </motion.p>
-          <motion.p animate={p2FadeX} initial={inViewXFadeOut}  className="mt-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px] xl:text-base xl:leading-[28px]">
-            I have experience working on personal projects, including:
+
+          <motion.p
+            animate={p3FadeX}
+            initial={inViewXFadeOut}
+            className="mt-4 md:mt-[20px] font-montserrat text-xs tracking-[-0.02em] font-medium text-gray-text leading-[20px] xl:text-base xl:leading-[28px]"
+          >
+            In addition to my web development experience, I have completed the
+            online course on{" "}
+            <span className="text-blue-500">
+              Introduction to Computer Science (CS50)
+            </span>
+            . I also have a basic understanding of design tools like{" "}
+            <span className="text-blue-500">Figma</span> and
+            <span className="text-blue-500">Photoshop</span>, as well as
+            programming languages such as{" "}
+            <span className="text-blue-500">C, Python, and Java</span>.
           </motion.p>
-          <motion.ol animate={listFadeX} initial={inViewXFadeOut}  className="mt-4 ml-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px] list-disc xl:text-base xl:leading-[28px]">
-            <li className="mt-4">
-              DopeShoe, a NextJS application that uses{" "}
-              <span className="text-blue-500">Stripe, GraphQL (URQL),</span>{" "}
-              Typescript, <span className="text-blue-500">Tailwind,</span> and{" "}
-              <span className="text-blue-500">Hygraph</span>
-            </li>
-            <li className="mt-4">
-              Githubstats, a NextJS application that uses GraphQL{" "}
-              <span className="text-blue-500">(Apollo Client)</span>,
-              Typescript, and <span className="text-blue-500">ChakraUI</span> to
-              search for and display statistics from a user's GitHub profile
-            </li>
-            <li className="mt-4">
-              DevBlog, A ReactJS-based blog called DevBlog, using{" "}
-              <span className="text-blue-500">
-                firebase, Prismic CMS, and sass
-              </span>
-            </li>
-            <li className="mt-4">
-              Monances A simple Finance App built with{" "}
-              <span className="text-blue-500">HTML, CSS, and JavaScript</span>
-            </li>
-          </motion.ol>
-          <motion.p animate={p3FadeX} initial={inViewXFadeOut} className="mt-4 md:mt-[20px] font-montserrat text-sm tracking-[-0.02em] text-white leading-[20px] xl:text-base xl:leading-[28px]">
-            In addition to my web development experience, I am currently taking
-            an online course on Introduction to Computer Science (CS50). I also
-            have a basic knowledge of design tools like Figma and Photoshop and
-            programming languages like C, Python, and Java.
-          </motion.p>
-          <motion.p animate={p4FadeX} initial={inViewXFadeOut}  className="mt-4 md:mt-[20px] font-montserrat text-sm text-white leading-[20px] xl:text-base xl:leading-[28px]">
+          <motion.p
+            animate={p4FadeX}
+            initial={inViewXFadeOut}
+            className="mt-4 md:mt-[20px] font-montserrat text-xs tracking-[-0.02em] font-medium text-gray-text leading-[20px] xl:text-base xl:leading-[28px]"
+          >
             I am constantly learning and improving my skills in web development
             and am dedicated to creating intuitive and user-friendly digital
             experiences.
           </motion.p>
-        </div>
+          <div className="mt-10 flex gap-4 items-center justify-between">
+            <div className="min-w-fit flex gap-4">
+              <div className="min-w-fit">
+                <img
+                  src="./assets/github.svg"
+                  alt="github"
+                  className="block w-7 md:w-10"
+                />
+              </div>
+              <img
+                src="./assets/linkedin.svg"
+                alt="github"
+                className="block w-7 md:w-10"
+              />
+              <img
+                src="./assets/mail.svg"
+                alt="github"
+                className="block w-7 md:w-10"
+              />
+            </div>
 
-        <div className="flex justify-center mt-14 md:mt-[92px] w-[283px] md:w-[390px] lg:w-[350px] lg:mt-36 xl:w-[420px] xl:mt-36  mx-auto">
-          <motion.img
-            animate={imgFadeY} initial={inViewYFadeOut} 
-            src="/assets/avatar.png"
-            alt="Vinícius Rodrigues"
-            className="block w-full"
-          />
+            <div className="block w-full h-1 bg-blue-gradient"></div>
+          </div>
         </div>
       </div>
     </motion.section>
