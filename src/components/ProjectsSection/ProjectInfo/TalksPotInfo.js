@@ -15,7 +15,7 @@ export function TalkSpotInfo() {
         allows users to create a room and share it with others to have secure
         and private conversations.
       </p>
-      <div className="mt-4 md:mt-6 flex items-center gap-2">
+      <div className="mt-4 md:mt-6 lg:mt-4 flex items-center gap-2">
         <BsFillCircleFill size={8} className="text-blue-400" />
         <span className="text-xs text-gray-text font-medium md:text-sm">
           React.js, Firebase, Firebase Auth, Tailwindcss, Framer motion

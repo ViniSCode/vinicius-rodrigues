@@ -84,24 +84,42 @@ export function AboutSection({
             experiences.
           </motion.p>
           <div className="mt-10 flex gap-4 items-center justify-between">
-            <div className="min-w-fit flex gap-4">
+            <div className="min-w-fit flex items-center gap-4">
               <div className="min-w-fit">
+                <a
+                  href="https://github.com/ViniSCode/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="./assets/github.svg"
+                    alt="github"
+                    className="block w-7 md:w-10"
+                  />
+                </a>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/vinicius-rodrigues-5897831b8/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
-                  src="./assets/github.svg"
+                  src="./assets/linkedin.svg"
                   alt="github"
                   className="block w-7 md:w-10"
                 />
-              </div>
-              <img
-                src="./assets/linkedin.svg"
-                alt="github"
-                className="block w-7 md:w-10"
-              />
-              <img
-                src="./assets/mail.svg"
-                alt="github"
-                className="block w-7 md:w-10"
-              />
+              </a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=viniciuskauarodriguesdev@gmail.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  src="./assets/mail.svg"
+                  alt="github"
+                  className="block w-7 md:w-10"
+                />
+              </a>
             </div>
 
             <div className="block w-full h-1 bg-blue-gradient"></div>

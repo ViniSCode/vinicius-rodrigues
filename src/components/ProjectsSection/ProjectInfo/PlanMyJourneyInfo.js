@@ -15,9 +15,9 @@ export function PlanMyJourneyInfo() {
           Leaflet
         </span>
         . Share and immerse yourself in inspiring trip plans curated by fellow
-        adventurers. Unleash your wanderlust today.
+        adventurers.
       </p>
-      <div className="mt-4 md:mt-6 flex items-center gap-2">
+      <div className="mt-4 md:mt-6 lg:mt-4 flex items-center gap-2">
         <BsFillCircleFill size={8} className="text-blue-400" />
         <span className="text-xs text-gray-text font-medium md:text-sm">
           Next.js, TypeScript, Tailwind CSS, GraphQL (URQL), Firebase, Leaflet

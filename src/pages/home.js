@@ -58,16 +58,6 @@ export default function Home() {
   const t7 = useAnimation();
   const t8 = useAnimation();
 
-  // Section 4 Animation
-  const p1 = useAnimation();
-  const p2 = useAnimation();
-  const p3 = useAnimation();
-  const p4 = useAnimation();
-  const img1 = useAnimation();
-  const img2 = useAnimation();
-  const img3 = useAnimation();
-  const img4 = useAnimation();
-
   const inViewFadeIn = {
     transition: { duration: 0.3, ease: "easeInOut", delay: 0.1 },
     opacity: 1,
@@ -186,14 +176,6 @@ export default function Home() {
     }
     if (section4View) {
       opacitySection4.start(inViewFadeIn);
-      p1.start(inViewYFadeIn07);
-      p2.start(inViewYFadeIn07);
-      p3.start(inViewYFadeIn07);
-      p4.start(inViewYFadeIn07);
-      img1.start(inViewXFadeIn04);
-      img2.start(inViewXFadeIn04);
-      img3.start(inViewXFadeIn04);
-      img4.start(inViewXFadeIn04);
     }
     if (section5View) {
       opacitySection5.start(inViewFadeIn);
@@ -349,16 +331,6 @@ export default function Home() {
           section4Ref={section4Ref}
           opacitySection4={opacitySection4}
           inViewFadeOut={inViewFadeOut}
-          p1={p1}
-          p2={p2}
-          p3={p3}
-          p4={p4}
-          img1={img1}
-          img2={img2}
-          img3={img3}
-          img4={img4}
-          inViewXFadeOut={inViewXFadeOut}
-          inViewYFadeOut={inViewYFadeOut}
         />
 
         <motion.section

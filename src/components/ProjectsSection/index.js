@@ -11,16 +11,6 @@ export function ProjectsSection({
   section4Ref,
   inViewFadeOut,
   opacitySection4,
-  p1,
-  p2,
-  p3,
-  p4,
-  img1,
-  img2,
-  img3,
-  img4,
-  inViewXFadeOut,
-  inViewYFadeOut,
 }) {
   const [showMoreProjects, setShowMoreProjects] = useState(false);
 
@@ -41,12 +31,12 @@ export function ProjectsSection({
           04. PROJECTS
         </h2>
         <div className="mt-[92px] md:mt-[152px] flex flex-col gap-28">
-          <div className="block lg:flex lg:items-center">
+          <div className="block lg:flex lg:items-center xl:items-start">
             <a
               href="https://dopeshoe.vercel.app/"
               rel="noreferrer"
               target="_blank"
-              className="shadow-sm min-w-[90%] max-w-[90%] mx-auto md:min-w-[90%] relative z-20 lg:min-w-[450px] lg:h-fit"
+              className="shadow-sm min-w-[90%] max-w-[90%] mx-auto md:min-w-[90%] relative z-20 lg:min-w-[450px] lg:h-fit xl:min-w-[600px]"
             >
               <motion.img
                 src="/assets/dopeshoe.png"
@@ -60,7 +50,7 @@ export function ProjectsSection({
             <motion.div
               // animate={p1}
               // initial={inViewYFadeOut}
-              className="bg-blue-890 border-4 border-blue-850 px-6 pb-4 md:px-10 md:py-10 pt-10 lg:py-8 lg:px-16 shadow-lg rounded-2xl relative top-[-50px] left-0 lg:left-[-30px] lg:top-0 z-10 w-full"
+              className="bg-blue-890 border-4 border-blue-850 px-6 pb-4 md:px-10 md:py-10 pt-10 lg:py-8 lg:px-16 shadow-lg rounded-2xl lg:rounded-[30px] relative top-[-50px] left-0 lg:left-[-30px] lg:top-0 z-10 w-full"
             >
               <DopeShoeInfo />
 
@@ -94,18 +84,18 @@ export function ProjectsSection({
             </motion.div>
           </div>
 
-          <div className="block lg:flex lg:items-center">
+          <div className="block lg:flex lg:items-center xl:items-start xl:relative">
             <a
               href="https://githubstats-seven.vercel.app/"
               rel="noreferrer"
               target="_blank"
-              className="order-2 shadow-sm min-w-[90%] max-w-[90%] mx-auto relative lg: z-20 lg:min-w-[450px] h-fit left-0 lg:left-[-30px]"
+              className="order-2 shadow-sm min-w-[90%] max-w-[90%] mx-auto relative z-20 lg:min-w-[450px] h-fit left-0 lg:left-[-30px] xl:left-auto xl:right-0 xl:absolute xl:min-w-[600px]"
             >
               <motion.img
                 src="/assets/githubstats.png"
                 alt=""
                 // animate={img1}
-                className="max-w-[90%] lg:max-w-full mx-auto lg:mx-0"
+                className="max-w-[90%] lg:max-w-full mx-auto lg:mx-0 xl:min-w-full"
                 // initial={inViewXFadeOut}
                 whileHover={{ scale: 1.02 }}
               />
@@ -113,11 +103,11 @@ export function ProjectsSection({
             <motion.div
               // animate={p1}
               // initial={inViewYFadeOut}
-              className="order-1 bg-blue-890 border-4 border-blue-850 px-6 pb-4 md:px-10 md:py-10 pt-10 lg:py-8 lg:px-16 shadow-lg rounded-2xl relative top-[-50px] lg:top-0 z-10 w-full"
+              className="order-1 bg-blue-890 border-4 border-blue-850 px-6 pb-4 md:px-10 md:py-10 pt-10 lg:py-8 lg:px-16 shadow-lg rounded-2xl lg:rounded-[30px] relative top-[-50px] lg:top-0 z-10 w-full xl:min-w-full"
             >
               <GithubStatsInfo />
 
-              <div className="mt-10 hidden items-baseline justify-between md:flex">
+              <div className="mt-10 hidden items-baseline justify-between md:flex max-w-full xl:max-w-[540px]">
                 <ProjectTechnologies
                   text="Dynamic Web Apps"
                   title="NextJS"
@@ -147,26 +137,26 @@ export function ProjectsSection({
             </motion.div>
           </div>
 
-          <div className="block lg:flex lg:items-center">
+          <div className="block lg:flex lg:items-center xl:items-start">
             <a
               href="https://talkspot.vercel.app/"
               rel="noreferrer"
               target="_blank"
-              className="order-1 shadow-sm min-w-[90%] max-w-[90%] mx-auto relative lg: z-20 lg:min-w-[450px] h-fit"
+              className="shadow-sm min-w-[90%] max-w-[90%] mx-auto md:min-w-[90%] relative z-20 lg:min-w-[450px] lg:h-fit xl:min-w-[600px]"
             >
               <motion.img
                 src="/assets/talkspot.png"
                 alt=""
-                className="max-w-[90%] lg:max-w-full mx-auto lg:mx-0"
                 // animate={img1}
                 // initial={inViewXFadeOut}
+                className="max-w-[90%] lg:max-w-full mx-auto lg:mx-0"
                 whileHover={{ scale: 1.02 }}
               />
             </a>
             <motion.div
               // animate={p1}
               // initial={inViewYFadeOut}
-              className="order-2 bg-blue-890 border-4 border-blue-850 px-6 pb-4 md:px-10 md:py-10 pt-10 lg:py-8 lg:px-14 shadow-lg rounded-2xl relative top-[-50px]  left-0 lg:left-[-30px] lg:top-0 z-10 w-full"
+              className="bg-blue-890 border-4 border-blue-850 px-6 pb-4 md:px-10 md:py-10 pt-10 lg:py-8 lg:px-16 shadow-lg rounded-2xl lg:rounded-[30px] relative top-[-50px] left-0 lg:left-[-30px] lg:top-0 z-10 w-full"
             >
               <TalkSpotInfo />
 
@@ -205,27 +195,26 @@ export function ProjectsSection({
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
             >
-              <div className="block lg:flex lg:items-center">
+              <div className="block lg:flex lg:items-center xl:items-start">
                 <a
                   href="https://planmyjourney.vercel.app/"
                   rel="noreferrer"
                   target="_blank"
-                  className="order-2 shadow-sm min-w-[90%] max-w-[90%] mx-auto relative lg: z-20 lg:min-w-[450px] h-fit left-0 lg:left-[-30px]"
+                  className="order-2 shadow-sm min-w-[90%] max-w-[90%] mx-auto md:min-w-[90%] relative z-20 lg:min-w-[450px] lg:h-fit xl:min-w-[600px] left-0 lg:left-[-30px]"
                 >
                   <motion.img
                     src="/assets/planmyjourney.png"
                     alt=""
-                    className="max-w-[90%] lg:max-w-full mx-auto lg:mx-0"
                     // animate={img1}
                     // initial={inViewXFadeOut}
+                    className="max-w-[90%] lg:max-w-full mx-auto lg:mx-0"
                     whileHover={{ scale: 1.02 }}
                   />
                 </a>
-
                 <motion.div
                   // animate={p1}
                   // initial={inViewYFadeOut}
-                  className="order-1 bg-blue-890 border-4 border-blue-850 px-6 pb-4 md:px-10 md:py-10 pt-10 lg:py-8 lg:px-14 shadow-lg rounded-2xl relative top-[-50px] lg:top-0 z-10 w-full"
+                  className="bg-blue-890 border-4 border-blue-850 px-6 pb-4 md:px-10 md:py-10 pt-10 lg:py-8 lg:px-16 shadow-lg rounded-2xl lg:rounded-[30px] relative top-[-50px] lg:top-0 z-10 w-full"
                 >
                   <PlanMyJourneyInfo />
 
@@ -253,8 +242,8 @@ export function ProjectsSection({
                   </div>
 
                   <ProjectPreview
-                    github="https://www.github.com/viniscode/talkspot"
-                    preview="https://talkspot.vercel.app/"
+                    github="https://www.github.com/viniscode/planmyjourney"
+                    preview="https://planmyjourney.vercel.app/"
                   />
                 </motion.div>
               </div>
