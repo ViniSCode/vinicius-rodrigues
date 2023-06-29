@@ -11,7 +11,7 @@ export function PlanMyJourneyInfo() {
       <p className="text-xs text-gray-text font-medium mt-4 md:text-sm md:mt-6">
         PlanMyJourney is a Travel Planner website, expertly crafted with{" "}
         <span className="text-blue-500">
-          Next.js, TypeScript, Tailwind CSS, GraphQL (URQL), Firebase, and
+          Next.js, TypeScript, Tailwindcss, GraphQL (URQL), Firebase, and
           Leaflet
         </span>
         . Share and immerse yourself in inspiring trip plans curated by fellow
@@ -20,7 +20,7 @@ export function PlanMyJourneyInfo() {
       <div className="mt-4 md:mt-6 lg:mt-4 flex items-center gap-2">
         <BsFillCircleFill size={8} className="text-blue-400" />
         <span className="text-xs text-gray-text font-medium md:text-sm">
-          Next.js, TypeScript, Tailwind CSS, GraphQL (URQL), Firebase, Leaflet
+          Next.js, TypeScript, Tailwindcss, GraphQL (URQL), Firebase, Leaflet
         </span>
       </div>
     </div>

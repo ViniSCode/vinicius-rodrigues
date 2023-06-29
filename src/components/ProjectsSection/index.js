@@ -54,9 +54,9 @@ export function ProjectsSection({
             >
               <DopeShoeInfo />
 
-              <div className="mt-10 hidden items-baseline justify-between md:flex">
+              <div className="mt-10 hidden items-baseline gap-4 justify-between md:flex">
                 <ProjectTechnologies
-                  text="Dynamic Web Apps"
+                  text="Dynamic Web Applications"
                   title="NextJS"
                   src="next.svg"
                 />
@@ -66,7 +66,7 @@ export function ProjectsSection({
                   src="typescript.svg"
                 />
                 <ProjectTechnologies
-                  text="Data Fetching and Mutations"
+                  text="Data Fetching & Mutations"
                   title="GraphQL"
                   src="graphql.svg"
                 />
@@ -109,7 +109,7 @@ export function ProjectsSection({
 
               <div className="mt-10 hidden items-baseline justify-between md:flex max-w-full xl:max-w-[540px]">
                 <ProjectTechnologies
-                  text="Dynamic Web Apps"
+                  text="Dynamic Web Applications"
                   title="NextJS"
                   src="next.svg"
                 />
@@ -119,7 +119,7 @@ export function ProjectsSection({
                   src="typescript.svg"
                 />
                 <ProjectTechnologies
-                  text="Data Fetching and Mutations"
+                  text="Data Fetching & Mutations"
                   title="GraphQL"
                   src="graphql.svg"
                 />
@@ -167,7 +167,7 @@ export function ProjectsSection({
                   src="react.svg"
                 />
                 <ProjectTechnologies
-                  text="Real-Time Data and Authentication"
+                  text="Real-Time Data, Authentication"
                   title="Firebase"
                   src="firebase.svg"
                 />
@@ -220,7 +220,7 @@ export function ProjectsSection({
 
                   <div className="mt-10 hidden items-baseline justify-between md:flex">
                     <ProjectTechnologies
-                      text="Dynamic Web Apps"
+                      text="Dynamic Web Applications"
                       title="NextJS"
                       src="next.svg"
                     />
@@ -230,7 +230,7 @@ export function ProjectsSection({
                       src="typescript.svg"
                     />
                     <ProjectTechnologies
-                      text="Data Fetching and Mutations"
+                      text="Data Fetching & Mutations"
                       title="GraphQL"
                       src="graphql.svg"
                     />
