@@ -2,34 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   @apply scrollbar-thumb-gray-500 scrollbar-thin scrollbar-none bg-gradient-to-r from-blue-900 to-gray-900 text-white;
-  -webkit-font-smoothing: antialiased
+  -webkit-font-smoothing: antialiased;
 }
 
 @layer base {
   html {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
   }
-  
-  #root, body, html {
+
+  #root,
+  body,
+  html {
     height: 100%;
     min-height: 100vh;
   }
-  
 
   .bg-blue-gradient {
-    background: linear-gradient(90deg, #1141BD 0%, #4AA6F7 65.47%);
+    background: linear-gradient(90deg, #1141bd 0%, #4aa6f7 65.47%);
   }
-  
+
   .menu-bg-blue-gradient {
-    background: linear-gradient(90deg, #141A31 0%, #01080B 65.47%);
+    background: linear-gradient(90deg, #141a31 0%, #01080b 65.47%);
   }
   .text-blue-gradient {
-    background: linear-gradient(90deg, #1141BD 0%, #4AA6F7 65.47%);
+    background: linear-gradient(90deg, #1141bd 0%, #4aa6f7 65.47%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -39,7 +39,7 @@ body {
   }
 
   .button-properties {
-    border: 1px solid #4AA6F7;
+    border: 1px solid #4aa6f7;
     box-shadow: 0px 0px 19px 7px rgba(74, 166, 247, 0.1);
     border-radius: 6px;
     color: #4aa6f7cc;
@@ -49,18 +49,22 @@ body {
     background: #0000004d;
   }
 
-  .projects-text-lg {    
+  .projects-text-lg {
     /* background: linear-gradient(90.04deg, #4AA6F7 -50%, #1141BD 100%);
     box-shadow: 0px 0px 29px 1px rgba(74, 166, 247, 0.25); */
     height: 135px;
-    display: flex; 
+    display: flex;
     align-items: center;
 
-    background: linear-gradient(111.86deg, rgba(25, 26, 27, 0.884) 0%, rgba(20, 26, 49, 0.32) 100%);
+    background: linear-gradient(
+      111.86deg,
+      rgba(25, 26, 27, 0.884) 0%,
+      rgba(20, 26, 49, 0.32) 100%
+    );
     box-shadow: 0px 0px 29px 1px rgba(74, 166, 247, 0.25);
-    border: 2px solid #4AA6F7;
+    border: 2px solid #4aa6f7;
   }
-  
+
   .sidebar {
     z-index: 2px;
     position: fixed;
@@ -69,7 +73,12 @@ body {
     bottom: 0;
     width: 100vw;
     padding: 20px;
-    background: linear-gradient(111.86deg, #010205 0%, #0b1022 50%, #050a1b 100%);
+    background: linear-gradient(
+      111.86deg,
+      #010205 0%,
+      #0b1022 50%,
+      #050a1b 100%
+    );
   }
 
   .sidebar__button {
@@ -95,11 +104,11 @@ body {
 
   @keyframes pulseLoading {
     50% {
-      opacity: .5;
+      opacity: 0.5;
     }
   }
-  .animate-pulse-loading {
-    animation: pulseLoading 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; 
-  }
 
+  .animate-pulse-loading {
+    animation: pulseLoading 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
 }
