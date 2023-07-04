@@ -195,113 +195,113 @@ export function ProjectsSection({
             </motion.div>
           </div>
 
-          {showMoreProjects && (
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="flex flex-col gap-28"
-            >
-              <div className="block lg:flex lg:items-center xl:items-start">
-                <a
-                  href="https://planmyjourney.vercel.app/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="order-2 shadow-sm min-w-[90%] max-w-[90%] mx-auto md:min-w-[90%] relative z-20 lg:min-w-[450px] lg:h-fit xl:min-w-[600px] left-0 lg:left-[-30px]"
-                >
-                  <motion.img
-                    src="/assets/planmyjourney.png"
-                    alt=""
-                    // animate={img1}
-                    // initial={inViewXFadeOut}
-                    className="max-w-[90%] lg:max-w-full mx-auto lg:mx-0"
-                    whileHover={{ scale: 1.02 }}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            className={`flex flex-col gap-28 ${
+              !showMoreProjects ? "hidden" : "flex"
+            }`}
+          >
+            <div className="block lg:flex lg:items-center xl:items-start">
+              <a
+                href="https://planmyjourney.vercel.app/"
+                rel="noreferrer"
+                target="_blank"
+                className="order-2 shadow-sm min-w-[90%] max-w-[90%] mx-auto md:min-w-[90%] relative z-20 lg:min-w-[450px] lg:h-fit xl:min-w-[600px] left-0 lg:left-[-30px]"
+              >
+                <motion.img
+                  src="/assets/planmyjourney.png"
+                  alt=""
+                  // animate={img1}
+                  // initial={inViewXFadeOut}
+                  className="max-w-[90%] lg:max-w-full mx-auto lg:mx-0"
+                  whileHover={{ scale: 1.02 }}
+                />
+              </a>
+              <motion.div
+                // animate={p1}
+                // initial={inViewYFadeOut}
+                className="bg-blue-890 border-4 border-blue-850 px-6 pb-4 md:px-10 md:py-10 pt-10 lg:py-8 lg:px-16 shadow-lg rounded-2xl lg:rounded-[30px] relative top-[-50px] lg:top-0 z-10 w-full"
+              >
+                <PlanMyJourneyInfo />
+
+                <div className="mt-10 hidden items-baseline justify-between md:flex">
+                  <ProjectTechnologies
+                    text="Dynamic Web Applications"
+                    title="NextJS"
+                    src="next.svg"
                   />
-                </a>
-                <motion.div
-                  // animate={p1}
-                  // initial={inViewYFadeOut}
-                  className="bg-blue-890 border-4 border-blue-850 px-6 pb-4 md:px-10 md:py-10 pt-10 lg:py-8 lg:px-16 shadow-lg rounded-2xl lg:rounded-[30px] relative top-[-50px] lg:top-0 z-10 w-full"
-                >
-                  <PlanMyJourneyInfo />
-
-                  <div className="mt-10 hidden items-baseline justify-between md:flex">
-                    <ProjectTechnologies
-                      text="Dynamic Web Applications"
-                      title="NextJS"
-                      src="next.svg"
-                    />
-                    <ProjectTechnologies
-                      text="Type-Safe React Components"
-                      title="Typescript"
-                      src="typescript.svg"
-                    />
-                    <ProjectTechnologies
-                      text="Data Fetching & Mutations"
-                      title="GraphQL"
-                      src="graphql.svg"
-                    />
-                    <ProjectTechnologies
-                      text="Responsive and Modern Design"
-                      title="LeafLet"
-                      src="leaflet.svg"
-                    />
-                  </div>
-
-                  <ProjectPreview
-                    github="https://www.github.com/viniscode/planmyjourney"
-                    preview="https://planmyjourney.vercel.app/"
+                  <ProjectTechnologies
+                    text="Type-Safe React Components"
+                    title="Typescript"
+                    src="typescript.svg"
                   />
-                </motion.div>
-              </div>
-
-              <div className="block lg:flex lg:items-center xl:items-start">
-                <a
-                  href="https://devblog-fe7e4.web.app/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="shadow-sm min-w-[90%] max-w-[90%] mx-auto md:min-w-[90%] relative z-20 lg:min-w-[450px] lg:h-fit xl:min-w-[600px]"
-                >
-                  <motion.img
-                    src="/assets/devblog.png"
-                    alt=""
-                    className="max-w-[90%] lg:max-w-full mx-auto lg:mx-0"
-                    whileHover={{ scale: 1.02 }}
+                  <ProjectTechnologies
+                    text="Data Fetching & Mutations"
+                    title="GraphQL"
+                    src="graphql.svg"
                   />
-                </a>
-                <motion.div className="bg-blue-890 border-4 border-blue-850 px-6 pb-4 md:px-10 md:py-10 pt-10 lg:py-8 lg:px-16 shadow-lg rounded-2xl lg:rounded-[30px] relative top-[-50px] left-0 lg:left-[-30px] lg:top-0 z-10 w-full">
-                  <DevBlogInfo />
-
-                  <div className="mt-10 hidden items-baseline justify-between md:flex">
-                    <ProjectTechnologies
-                      text="Dynamic Web Applications"
-                      title="React"
-                      src="react.svg"
-                    />
-                    <ProjectTechnologies
-                      text="Real-Time Data, Authentication"
-                      title="Firebase"
-                      src="firebase.svg"
-                    />
-                    <ProjectTechnologies
-                      text="Responsive and Modern Design"
-                      title="Sass"
-                      src="sass.svg"
-                    />
-                    <ProjectTechnologies
-                      text="Headless Content Management"
-                      title="Prismic"
-                      src="prismic.svg"
-                    />
-                  </div>
-
-                  <ProjectPreview
-                    github="https://www.github.com/viniscode/devblog"
-                    preview="https://devblog-fe7e4.web.app/"
+                  <ProjectTechnologies
+                    text="Responsive and Modern Design"
+                    title="LeafLet"
+                    src="leaflet.svg"
                   />
-                </motion.div>
-              </div>
-            </motion.div>
-          )}
+                </div>
+
+                <ProjectPreview
+                  github="https://www.github.com/viniscode/planmyjourney"
+                  preview="https://planmyjourney.vercel.app/"
+                />
+              </motion.div>
+            </div>
+
+            <div className="block lg:flex lg:items-center xl:items-start">
+              <a
+                href="https://devblog-fe7e4.web.app/"
+                rel="noreferrer"
+                target="_blank"
+                className="shadow-sm min-w-[90%] max-w-[90%] mx-auto md:min-w-[90%] relative z-20 lg:min-w-[450px] lg:h-fit xl:min-w-[600px]"
+              >
+                <motion.img
+                  src="/assets/devblog.png"
+                  alt=""
+                  className="max-w-[90%] lg:max-w-full mx-auto lg:mx-0"
+                  whileHover={{ scale: 1.02 }}
+                />
+              </a>
+              <motion.div className="bg-blue-890 border-4 border-blue-850 px-6 pb-4 md:px-10 md:py-10 pt-10 lg:py-8 lg:px-16 shadow-lg rounded-2xl lg:rounded-[30px] relative top-[-50px] left-0 lg:left-[-30px] lg:top-0 z-10 w-full">
+                <DevBlogInfo />
+
+                <div className="mt-10 hidden items-baseline justify-between md:flex">
+                  <ProjectTechnologies
+                    text="Dynamic Web Applications"
+                    title="React"
+                    src="react.svg"
+                  />
+                  <ProjectTechnologies
+                    text="Real-Time Data, Authentication"
+                    title="Firebase"
+                    src="firebase.svg"
+                  />
+                  <ProjectTechnologies
+                    text="Responsive and Modern Design"
+                    title="Sass"
+                    src="sass.svg"
+                  />
+                  <ProjectTechnologies
+                    text="Headless Content Management"
+                    title="Prismic"
+                    src="prismic.svg"
+                  />
+                </div>
+
+                <ProjectPreview
+                  github="https://www.github.com/viniscode/devblog"
+                  preview="https://devblog-fe7e4.web.app/"
+                />
+              </motion.div>
+            </div>
+          </motion.div>
         </motion.div>
 
         {!showMoreProjects ? (
