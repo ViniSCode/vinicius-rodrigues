@@ -1,6 +1,5 @@
 # Welcome to my Portfolio
-
-![enter image description here](https://github.com/ViniSCode/vinicius-rodrigues/blob/main/public/assets/portfolio_preview.png?raw=true)
+![enter image description here](https://github.com/ViniSCode/vinicius-rodrigues/blob/main/public/assets/portfolio-layout.png?raw=true)
 
 ### Portfolio Preview: https://viniciusrodrigues.vercel.app/
 
