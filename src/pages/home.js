@@ -1,5 +1,4 @@
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { AboutSection } from "../components/AboutSection";
 import { HeroSection } from "../components/HeroSection";
@@ -24,194 +23,54 @@ export default function Home() {
     triggerOnce: true,
   });
 
-  // Section Opacity Animation
-  const opacitySection1 = useAnimation();
-  const headerFade = useAnimation();
-  const opacitySection2 = useAnimation();
-  const opacitySection3 = useAnimation();
-  const opacitySection4 = useAnimation();
-  const opacitySection5 = useAnimation();
-
-  // Section 1 Animation
-  const heroHiFade = useAnimation();
-  const heroTitleFade = useAnimation();
-  const heroSubFade = useAnimation();
-  const heroPFade = useAnimation();
-  const heroButtonFade = useAnimation();
-  const heroImageFade = useAnimation();
-
-  // Section 2 Animation
-  const p1FadeX = useAnimation();
-  const p2FadeX = useAnimation();
-  const p3FadeX = useAnimation();
-  const listFadeX = useAnimation();
-  const p4FadeX = useAnimation();
-  const imgFadeY = useAnimation();
-
-  // Section 3 Animation
-  const t1 = useAnimation();
-  const t2 = useAnimation();
-  const t3 = useAnimation();
-  const t4 = useAnimation();
-  const t5 = useAnimation();
-  const t6 = useAnimation();
-  const t7 = useAnimation();
-  const t8 = useAnimation();
-
-  const inViewFadeIn = {
-    transition: { duration: 0.3, ease: "easeInOut", delay: 0.1 },
-    opacity: 1,
-  };
-  const inViewFadeOut = {
-    transition: { duration: 0.3, ease: "easeInOut" },
-    opacity: 0,
+  const fadeInXVariant = {
+    hidden: { opacity: 0, x: "-100px" },
+    visible: (i) => {
+      const delay = 0.1 + i * 0.2;
+      return {
+        opacity: 1,
+        x: 0,
+        transition: {
+          delay,
+          duration: 0.5,
+        },
+      };
+    },
   };
 
-  const inViewXFadeIn04 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 0.4 },
-    opacity: 1,
-    x: "0",
-  };
-  const inViewXFadeIn05 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 0.5 },
-    opacity: 1,
-    x: "0",
-  };
-  const inViewXFadeIn06 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 0.6 },
-    opacity: 1,
-    x: "0",
-  };
-  const inViewXFadeIn07 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 0.7 },
-    opacity: 1,
-    x: "0",
-  };
-  const inViewXFadeIn08 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 0.8 },
-    opacity: 1,
-    x: "0",
-  };
-  const inViewXFadeOut = {
-    transition: { duration: 0.5, ease: "easeInOut" },
-    opacity: 0,
-    x: "-100px",
-  };
-  const inViewYFadeOut = {
-    transition: { duration: 0.5, ease: "easeInOut" },
-    opacity: 0,
-    y: "100px",
-  };
-  const inViewYFadeIn04 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 0.4 },
-    opacity: 1,
-    y: "0",
-  };
-  const inViewYFadeIn05 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 0.5 },
-    opacity: 1,
-    y: "0",
-  };
-  const inViewYFadeIn06 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 0.6 },
-    opacity: 1,
-    y: "0",
-  };
-  const inViewYFadeIn07 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 0.7 },
-    opacity: 1,
-    y: "0",
-  };
-  const inViewYFadeIn08 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 0.8 },
-    opacity: 1,
-    y: "0",
-  };
-  const inViewYFadeIn09 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 0.9 },
-    opacity: 1,
-    y: "0",
-  };
-  const inViewYFadeIn10 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 1 },
-    opacity: 1,
-    y: "0",
-  };
-  const inViewYFadeIn11 = {
-    transition: { duration: 0.7, ease: "easeInOut", delay: 1.1 },
-    opacity: 1,
-    y: "0",
+  const fadeInYVariant = {
+    hidden: { opacity: 0, y: "100px" },
+    visible: (i) => {
+      const delay = 0.1 + i * 0.2;
+      return {
+        opacity: 1,
+        y: 0,
+        transition: {
+          delay,
+          duration: 0.5,
+        },
+      };
+    },
   };
 
-  useEffect(() => {
-    if (section1View) {
-      opacitySection1.start(inViewFadeIn);
-      headerFade.start(inViewFadeIn);
-      heroHiFade.start(inViewXFadeIn04);
-      heroTitleFade.start(inViewXFadeIn05);
-      heroSubFade.start(inViewXFadeIn06);
-      heroPFade.start(inViewXFadeIn07);
-      heroButtonFade.start(inViewXFadeIn08);
-      heroImageFade.start(inViewYFadeIn09);
-    }
-    if (section2View) {
-      opacitySection2.start(inViewFadeIn);
-      p1FadeX.start(inViewXFadeIn04);
-      p2FadeX.start(inViewXFadeIn05);
-      listFadeX.start(inViewXFadeIn06);
-      p3FadeX.start(inViewXFadeIn07);
-      p4FadeX.start(inViewXFadeIn08);
-      imgFadeY.start(inViewYFadeIn09);
-    }
-    if (section3View) {
-      opacitySection3.start(inViewFadeIn);
-      t1.start(inViewYFadeIn04);
-      t2.start(inViewYFadeIn05);
-      t3.start(inViewYFadeIn06);
-      t4.start(inViewYFadeIn07);
-      t5.start(inViewYFadeIn08);
-      t6.start(inViewYFadeIn09);
-      t7.start(inViewYFadeIn10);
-      t8.start(inViewYFadeIn11);
-    }
-    if (section4View) {
-      opacitySection4.start(inViewFadeIn);
-    }
-    if (section5View) {
-      opacitySection5.start(inViewFadeIn);
-    }
-  }, [section1View, section2View, section3View, section4View, section5View]);
-
-  const scrollToHome = () => {
-    const element = document.getElementById("home-section");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const fadeInVariant = {
+    hidden: { opacity: 0 },
+    visible: (i) => {
+      const delay = 0.1 + i * 0.2;
+      return {
+        opacity: 1,
+        transition: {
+          delay,
+          duration: 0.5,
+        },
+      };
+    },
   };
 
-  const scrollToAbout = () => {
-    const element = document.getElementById("about-section");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // refactor this scroll functions to scrollTo("home-section")
 
-  const scrollToTechnologies = () => {
-    const element = document.getElementById("technologies-section");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const scrollToProjects = () => {
-    const element = document.getElementById("projects-section");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const scrollToContact = () => {
-    const element = document.getElementById("contact-section");
+  const scrollTo = (id) => {
+    const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -243,7 +102,7 @@ export default function Home() {
           <ul className="flex items-center gap-8 font-montserrat font-bold leading-5 tracking-[-0.02em] lg:text-xs xl:text-sm">
             <li>
               <button
-                onClick={scrollToHome}
+                onClick={() => scrollTo("home-section")}
                 className="text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
               >
                 01.HOME
@@ -251,7 +110,7 @@ export default function Home() {
             </li>
             <li>
               <button
-                onClick={scrollToAbout}
+                onClick={() => scrollTo("about-section")}
                 className="text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
               >
                 02.ABOUT
@@ -259,7 +118,7 @@ export default function Home() {
             </li>
             <li>
               <button
-                onClick={scrollToTechnologies}
+                onClick={() => scrollTo("technologies-section")}
                 className="text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
               >
                 03.TECHNOLOGIES
@@ -267,7 +126,7 @@ export default function Home() {
             </li>
             <li>
               <button
-                onClick={scrollToProjects}
+                onClick={() => scrollTo("projects-section")}
                 className="text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
               >
                 03.PROJECTS
@@ -275,7 +134,7 @@ export default function Home() {
             </li>
             <li>
               <button
-                onClick={scrollToContact}
+                onClick={() => scrollTo("contact-section")}
                 className="text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
               >
                 04.CONTACT
@@ -287,58 +146,42 @@ export default function Home() {
 
       <main className="mt-[132px] md:mt-[252px] lg:mt-[102px] xl:mt-[198px] max-w-[358px] md:max-w-[628px] lg:max-w-[1283px] px-4 mx-auto">
         <HeroSection
+          section1View={section1View}
           section1Ref={section1Ref}
-          inViewYFadeOut={inViewYFadeOut}
-          inViewXFadeOut={inViewXFadeOut}
-          heroHiFade={heroHiFade}
-          heroTitleFade={heroTitleFade}
-          heroSubFade={heroSubFade}
-          heroPFade={heroPFade}
-          heroButtonFade={heroButtonFade}
-          heroImageFade={heroImageFade}
+          fadeInXVariant={fadeInXVariant}
+          fadeInYVariant={fadeInYVariant}
         />
 
         <AboutSection
           section2Ref={section2Ref}
-          p1FadeX={p1FadeX}
-          p2FadeX={p2FadeX}
-          p3FadeX={p3FadeX}
-          listFadeX={listFadeX}
-          p4FadeX={p4FadeX}
-          imgFadeY={imgFadeY}
-          inViewYFadeOut={inViewYFadeOut}
-          inViewXFadeOut={inViewXFadeOut}
-          inViewFadeOut={inViewFadeOut}
-          opacitySection2={opacitySection2}
+          fadeInXVariant={fadeInXVariant}
+          fadeInYVariant={fadeInYVariant}
+          section2View={section2View}
+          fadeInVariant={fadeInVariant}
         />
 
         <TechnologiesSection
           section3Ref={section3Ref}
-          t1={t1}
-          t2={t2}
-          t3={t3}
-          t4={t4}
-          t5={t5}
-          t6={t6}
-          t7={t7}
-          t8={t8}
-          inViewYFadeOut={inViewYFadeOut}
-          inViewFadeOut={inViewFadeOut}
-          opacitySection3={opacitySection3}
+          fadeInYVariant={fadeInYVariant}
+          section3View={section3View}
+          fadeInVariant={fadeInVariant}
         />
 
         <ProjectsSection
           section4Ref={section4Ref}
-          opacitySection4={opacitySection4}
-          inViewFadeOut={inViewFadeOut}
+          fadeInYVariant={fadeInYVariant}
+          section4View={section4View}
+          fadeInVariant={fadeInVariant}
         />
 
         <motion.section
           id="contact-section"
           className="mt-[398px] pb-56"
           ref={section5Ref}
-          initial={inViewFadeOut}
-          animate={opacitySection5}
+          variants={fadeInVariant}
+          initial="hidden"
+          animate={section5View ? "visible" : "hidden"}
+          custom={0.2}
         >
           <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">
             05. CONTACT

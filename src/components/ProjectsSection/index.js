@@ -9,8 +9,9 @@ import { ProjectTechnologies } from "./ProjectTechnologies";
 
 export function ProjectsSection({
   section4Ref,
-  inViewFadeOut,
-  opacitySection4,
+  fadeInYVariant,
+  section4View,
+  fadeInVariant,
 }) {
   const [showMoreProjects, setShowMoreProjects] = useState(false);
 
@@ -18,19 +19,22 @@ export function ProjectsSection({
     <motion.div
       id="projects-section"
       ref={section4Ref}
-      initial={inViewFadeOut}
-      animate={opacitySection4}
+      variants={fadeInVariant}
+      initial="hidden"
+      animate={section4View ? "visible" : "hidden"}
+      custom={0.2}
     >
-      <motion.section
-        className="mt-[398px]"
-        ref={section4Ref}
-        initial={inViewFadeOut}
-        animate={opacitySection4}
-      >
+      <motion.section className="mt-[398px]">
         <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">
           04. PROJECTS
         </h2>
-        <div className="mt-[92px] md:mt-[152px] flex flex-col gap-28">
+        <motion.div
+          variants={fadeInYVariant}
+          initial="hidden"
+          animate={section4View ? "visible" : "hidden"}
+          custom={0.4}
+          className="mt-[92px] md:mt-[152px] flex flex-col gap-28"
+        >
           <div className="block lg:flex lg:items-center xl:items-start">
             <a
               href="https://dopeshoe.vercel.app/"
@@ -249,7 +253,7 @@ export function ProjectsSection({
               </div>
             </motion.div>
           )}
-        </div>
+        </motion.div>
 
         {!showMoreProjects ? (
           <div className="w-full flex justify-center mt-16 lg:mt-32">

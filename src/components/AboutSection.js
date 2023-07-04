@@ -1,24 +1,20 @@
 import { motion } from "framer-motion";
 export function AboutSection({
   section2Ref,
-  p1FadeX,
-  p2FadeX,
-  p3FadeX,
-  listFadeX,
-  p4FadeX,
-  imgFadeY,
-  inViewYFadeOut,
-  inViewXFadeOut,
-  inViewFadeOut,
-  opacitySection2,
+  fadeInXVariant,
+  fadeInYVariant,
+  fadeInVariant,
+  section2View,
 }) {
   return (
     <motion.section
       id="about-section"
       className="mt-[398px]"
       ref={section2Ref}
-      animate={opacitySection2}
-      initial={inViewFadeOut}
+      variants={fadeInVariant}
+      initial="hidden"
+      animate={section2View ? "visible" : "hidden"}
+      custom={0.2}
     >
       <h2 className="text-center font-montserrat font-bold text-[28px] leading-10 tracking-[-0.02em] text-blue-gradient md:text-[40px]">
         02. About
@@ -26,8 +22,10 @@ export function AboutSection({
       <div className="mt-[92px] flex flex-col gap-14 lg:flex lg:flex-row lg:gap-16 lg:items-center xl:items-center bg-blue-890 border-4 border-blue-850 rounded-2xl md:rounded-3xl lg:rounded-[30px] p-8 md:p-16">
         <div className="flex justify-center w-full md:w-[300px] lg:min-w-[300px] xl:min-w-[400px]  mx-auto">
           <motion.img
-            animate={imgFadeY}
-            initial={inViewYFadeOut}
+            variants={fadeInYVariant}
+            initial="hidden"
+            animate={section2View ? "visible" : "hidden"}
+            custom={2.5}
             src="/assets/avatar.png"
             alt="Vinícius Rodrigues"
             className="block w-full"
@@ -38,8 +36,10 @@ export function AboutSection({
             Vinícius Rodrigues
           </h3>
           <motion.p
-            animate={p1FadeX}
-            initial={inViewXFadeOut}
+            variants={fadeInXVariant}
+            initial="hidden"
+            animate={section2View ? "visible" : "hidden"}
+            custom={0.3}
             className="mt-8 md:mt-10 font-montserrat text-xs text-gray-text  font-medium leading-[20px] xl:text-base xl:leading-[28px]"
           >
             Hi there! My name is Vinícius and I am{" "}
@@ -59,8 +59,10 @@ export function AboutSection({
           </motion.p>
 
           <motion.p
-            animate={p3FadeX}
-            initial={inViewXFadeOut}
+            variants={fadeInXVariant}
+            initial="hidden"
+            animate={section2View ? "visible" : "hidden"}
+            custom={0.4}
             className="mt-4 md:mt-[20px] font-montserrat text-xs tracking-[-0.02em] font-medium text-gray-text leading-[20px] xl:text-base xl:leading-[28px]"
           >
             In addition to my web development experience, I have completed the
@@ -75,15 +77,23 @@ export function AboutSection({
             <span className="text-blue-500">C, Python, and Java</span>.
           </motion.p>
           <motion.p
-            animate={p4FadeX}
-            initial={inViewXFadeOut}
+            variants={fadeInXVariant}
+            initial="hidden"
+            animate={section2View ? "visible" : "hidden"}
+            custom={0.5}
             className="mt-4 md:mt-[20px] font-montserrat text-xs tracking-[-0.02em] font-medium text-gray-text leading-[20px] xl:text-base xl:leading-[28px]"
           >
             I am constantly learning and improving my skills in web development
             and am dedicated to creating intuitive and user-friendly digital
             experiences.
           </motion.p>
-          <div className="mt-10 flex gap-4 items-center justify-between">
+          <motion.div
+            variants={fadeInXVariant}
+            initial="hidden"
+            animate={section2View ? "visible" : "hidden"}
+            custom={0.6}
+            className="mt-10 flex gap-4 items-center justify-between"
+          >
             <div className="min-w-fit flex items-center gap-4">
               <div className="min-w-fit">
                 <a
@@ -123,7 +133,7 @@ export function AboutSection({
             </div>
 
             <div className="block w-full h-1 bg-blue-gradient"></div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </motion.section>
