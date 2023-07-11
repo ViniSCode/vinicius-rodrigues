@@ -1,5 +1,3 @@
-![Repository Logo](logo.png)
-
 # Welcome to my Portfolio
 ![enter image description here](https://github.com/ViniSCode/vinicius-rodrigues/blob/main/public/assets/portfolio-layout.png?raw=true)
 
