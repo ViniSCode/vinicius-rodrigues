@@ -308,7 +308,7 @@ export function ProjectsSection({
           <div className="w-full flex justify-center mt-16 lg:mt-32">
             <motion.button
               onClick={() => setShowMoreProjects(true)}
-              className="button-properties py-3 px-4 lg:py-4 lg:px-6 transition-colors hover:bg-blue-300 hover:text-blue-500"
+              className="button-properties py-3 px-4 lg:py-4 lg:px-6 text-sky-400 font-medium cursor-pointer button-properties transition-colors hover:bg-blue-300 hover:text-sky-400"
             >
               More Projects
             </motion.button>
@@ -319,7 +319,7 @@ export function ProjectsSection({
               href="https://www.github.com/viniscode"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-4 button-properties py-3 px-4 lg:py-4 lg:px-6 transition-colors hover:bg-blue-300 hover:text-blue-500"
+              className="flex items-center gap-4 button-properties py-3 px-4 lg:py-4 lg:px-6 text-sky-400 font-medium cursor-pointer button-properties mt-[78px] transition-colors hover:bg-blue-300 hover:text-sky-400"
             >
               <span>All Projects</span>
               <a

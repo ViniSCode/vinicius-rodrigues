@@ -96,14 +96,14 @@ export default function Home() {
       </div>
       <div className="hidden lg:block lg:max-w-[1283px] mx-auto mt-8 px-4">
         <nav className="flex items-center justify-between">
-          <span className="text-blue-gradient font-bold leading-5 tracking-[-0.02em] lg:text-xs xl:text-sm">
+          <span className="navLink-text-blue-gradient font-montserrat font-bold text-sm leading-[17px] tracking-[-0.02em] text-blue-gradient">
             VINÍCIUS RODRIGUES
           </span>
           <ul className="flex items-center gap-8 font-montserrat font-bold leading-5 tracking-[-0.02em] lg:text-xs xl:text-sm">
             <li>
               <button
                 onClick={() => scrollTo("home-section")}
-                className="text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
+                className="navLink-text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
               >
                 01.HOME
               </button>
@@ -111,7 +111,7 @@ export default function Home() {
             <li>
               <button
                 onClick={() => scrollTo("about-section")}
-                className="text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
+                className="navLink-text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
               >
                 02.ABOUT
               </button>
@@ -119,7 +119,7 @@ export default function Home() {
             <li>
               <button
                 onClick={() => scrollTo("technologies-section")}
-                className="text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
+                className="navLink-text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
               >
                 03.TECHNOLOGIES
               </button>
@@ -127,7 +127,7 @@ export default function Home() {
             <li>
               <button
                 onClick={() => scrollTo("projects-section")}
-                className="text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
+                className="navLink-text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
               >
                 03.PROJECTS
               </button>
@@ -135,7 +135,7 @@ export default function Home() {
             <li>
               <button
                 onClick={() => scrollTo("contact-section")}
-                className="text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
+                className="navLink-text-blue-gradient transition-filter hover:brightness-150 cursor-pointer"
               >
                 04.CONTACT
               </button>
@@ -224,12 +224,12 @@ export default function Home() {
             </div>
             <div className="mt-20 flex justify-center">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=viniciuskauarodriguesdev@gmail.com"
+                href="https://docs.google.com/document/d/1gyE3E3h1nIJsyZufCv43wzwLEs8EKXGtXMcwkRY-S0c/edit?usp=sharing"
                 rel="noreferrer"
                 target="_blank"
-                className="cursor-pointer button-properties py-3 px-16 mt-[78px] transition-colors hover:bg-blue-300 hover:text-blue-500"
+                className="text-sky-400 font-medium cursor-pointer button-properties py-3 px-16 mt-[78px] transition-colors hover:bg-blue-300 hover:text-sky-400"
               >
-                Say Hello
+                RESUMÉ
               </a>
             </div>
           </div>

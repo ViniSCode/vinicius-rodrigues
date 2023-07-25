@@ -34,6 +34,12 @@ body {
     -webkit-text-fill-color: transparent;
   }
 
+  .navLink-text-blue-gradient {
+    background: linear-gradient(90deg, #2056e0 0%, #4aa6f7 65.47%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .hero-image {
     filter: drop-shadow(0px 39px 70px rgba(74, 166, 247, 0.3));
   }
