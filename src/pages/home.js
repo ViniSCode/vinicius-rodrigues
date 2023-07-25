@@ -224,7 +224,7 @@ export default function Home() {
             </div>
             <div className="mt-20 flex justify-center">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=viniciuskauarodriguesdev@gmail.com"
+                href="https://docs.google.com/document/d/1gyE3E3h1nIJsyZufCv43wzwLEs8EKXGtXMcwkRY-S0c/edit?usp=sharing"
                 rel="noreferrer"
                 target="_blank"
                 className="text-sky-400 font-medium cursor-pointer button-properties py-3 px-16 mt-[78px] transition-colors hover:bg-blue-300 hover:text-sky-400"
