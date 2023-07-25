@@ -70,7 +70,7 @@ export function HeroSection({
           initial="hidden"
           animate={section1View ? "visible" : "hidden"}
           custom={4}
-          className="button-properties py-3 px-4 lg:py-4 lg:px-6 mt-[78px] transition-colors hover:bg-blue-300 hover:text-blue-500 lg:mt-[72px]"
+          className="button-properties text-sky-400 font-medium py-3 px-4 lg:py-4 lg:px-6 mt-[78px] transition-colors hover:bg-blue-300 hover:text-sky-400 lg:mt-[72px]"
         >
           Check out my projects
         </motion.button>
