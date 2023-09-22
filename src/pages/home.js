@@ -67,8 +67,6 @@ export default function Home() {
     },
   };
 
-  // refactor this scroll functions to scrollTo("home-section")
-
   const scrollTo = (id) => {
     const element = document.getElementById(id);
     if (element) {
